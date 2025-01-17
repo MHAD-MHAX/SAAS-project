@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./App.css"; // Add CSS file for styling
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import AOS styles
 
 const Reviews = () => {
   const reviews = [
@@ -68,19 +70,23 @@ const Reviews = () => {
   ];
 
   const renderStars = (count) => {
-    return "⭐".repeat(count);
+    return "⭐️".repeat(count);
   };
 
+  useEffect(() => {
+    AOS.init({ duration: 1000 }); // Initialize AOS with duration
+  }, []);
+
   return (
-    <div className="reviews-section">
-      <h2>Vad säger våra kunder om oss?</h2>
-      <p>
+    <div className="reviews-section" data-aos="fade-up">
+      <h2 data-aos="fade-up">Vad säger våra kunder om oss?</h2>
+      <p data-aos="fade-up">
         Vi är stolta över förtroendet som vi fått att driva mer trafik och hjälpa
         företag, stora som små, att synas bättre på nätet.
       </p>
       <div className="reviews-grid">
         {reviews.map((review, index) => (
-          <div className="review-card" key={index}>
+          <div className="review-card" key={index} data-aos="zoom-in">
             <div className="review-header">
               <div className="review-avatar">{review.name[0]}</div>
               <div>
