@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import "./App.css"; // Import your CSS
+import "./App.css"; // Import updated CSS
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import AOS styles
 
@@ -39,7 +39,9 @@ const ContactForm = () => {
           <label htmlFor="message">Meddelande</label>
           <textarea id="message" placeholder="Skriv ditt meddelande här"></textarea>
         </div>
-        <button type="submit" className="submit-button" data-aos="fade-up">Skicka</button>
+        <button type="submit" className="submit-button" data-aos="fade-up">
+          Skicka
+        </button>
       </form>
     </div>
   );
