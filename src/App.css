@@ -641,3 +641,29 @@ h2 {
 .bar-logo{
   margin-top: 6px;
 }
+
+
+/* Adjust video size for larger screens */
+.responsive-video {
+  width: 70%; /* Default for smaller screens */
+}
+
+/* Media query for larger screens */
+@media (min-width: 768px) {
+  .responsive-video {
+    width: 50%; /* Adjust width on larger screens */
+  }
+}
+
+
+.read-more-button {
+  background-color: #0066CC;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  display: block;
+  margin: 20px auto;
+}

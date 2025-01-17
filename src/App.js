@@ -5,6 +5,12 @@ import "aos/dist/aos.css";
 import "./App.css";
 
 import InfoSection from "./InfoSection";
+import GoogleSection from "./GoogleSection";
+
+import CustomerFocusSection from "./CustomerFocus";
+
+import DigitalEcosystem from "./Digital";
+
 import CustomerReviews from "./CustomerReviews";
 import ContactForm from "./ContactForm";
 import Footer from "./Footer";
@@ -80,6 +86,9 @@ function App() {
 
       {/* Additional Sections */}
       <InfoSection />
+      <DigitalEcosystem/>
+      <CustomerFocusSection/>
+      <GoogleSection/>
       <CustomerReviews />
       <ContactForm />
       <Footer />

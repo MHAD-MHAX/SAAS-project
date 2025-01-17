@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css"; // Add CSS file for styling
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import AOS styles
@@ -73,6 +73,12 @@ const Reviews = () => {
     return "⭐️".repeat(count);
   };
 
+  const [showAll, setShowAll] = useState(false);
+
+  const handleShowMore = () => {
+    setShowAll(true);
+  };
+
   useEffect(() => {
     AOS.init({ duration: 1000 }); // Initialize AOS with duration
   }, []);
@@ -85,7 +91,7 @@ const Reviews = () => {
         företag, stora som små, att synas bättre på nätet.
       </p>
       <div className="reviews-grid">
-        {reviews.map((review, index) => (
+        {reviews.slice(0, showAll ? reviews.length : 3).map((review, index) => (
           <div className="review-card" key={index} data-aos="zoom-in">
             <div className="review-header">
               <div className="review-avatar">{review.name[0]}</div>
@@ -104,6 +110,11 @@ const Reviews = () => {
           </div>
         ))}
       </div>
+      {!showAll && (
+        <button onClick={handleShowMore} className="read-more-button">
+          Läs mer
+        </button>
+      )}
     </div>
   );
 };
