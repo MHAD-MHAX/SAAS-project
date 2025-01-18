@@ -31,7 +31,7 @@ const CustomerFocusSection = () => {
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
-          textAlign:"left",
+         
           alignItems: "center", // Center the text content
           marginLeft:"0px"
         }}
@@ -42,6 +42,7 @@ const CustomerFocusSection = () => {
             fontSize: "36px",
             color: "#333",
             fontWeight: "bold",
+        
           }}
         >
           Digitala ekosystemet,<br></br>Utöka er synlighet online
@@ -52,6 +53,7 @@ const CustomerFocusSection = () => {
             color: "#555",
             lineHeight: "1.6",
             fontWeight: "bold",
+            textAlign:"left",
           }}
         >
           Vi hjälper dig som lokalt företag att lista din verksamhet på alla
