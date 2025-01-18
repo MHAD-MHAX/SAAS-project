@@ -44,9 +44,7 @@ const CustomerFocusSection = () => {
             fontWeight: "bold",
           }}
         >
-          Digitala ekosystemet,
-          <br />
-          Utöka er synlighet online
+          Digitala ekosystemet,Utöka er synlighet online
         </h1>
         <p
           style={{
