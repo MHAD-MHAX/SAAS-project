@@ -13,7 +13,7 @@ const CustomerFocusSection = () => {
   return (
     <section
       style={{
-        paddingRight: "130px",
+        paddingRight: "140px",
         backgroundColor: "#EAF6FB",
         padding: "20px",
         display: "flex",
@@ -26,7 +26,7 @@ const CustomerFocusSection = () => {
       {/* Left Side - Text Content */}
       <div
         style={{
-        paddingLeft:"200px"
+        paddingLeft:"140px"
         
         }}
         data-aos="fade-right" // Animation for left side
@@ -72,7 +72,7 @@ const CustomerFocusSection = () => {
       {/* Right Side - Video Content */}
       <div
         style={{
-          marginRight: "80px",
+          marginRight: "60px",
           flex: "1 1 100%", // Full width on small screens
           maxWidth: "400px",
           marginBottom: "20px", // Space between video and text on small screens
