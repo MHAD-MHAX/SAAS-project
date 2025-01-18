@@ -27,13 +27,13 @@ const CustomerFocusSection = () => {
       {/* Left Side - Text Content */}
       <div
         style={{
-          padding: "20px",
+          
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
           textAlign: "center",
           alignItems: "center", // Center the text content
-          marginLeft:"80px"
+          marginLeft:"10px"
         }}
         data-aos="fade-right" // Animation for left side
       >

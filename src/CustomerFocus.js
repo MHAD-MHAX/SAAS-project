@@ -13,7 +13,7 @@ const CustomerFocusSection = () => {
   return (
     <section
       style={{
-        paddingRight: "140px",
+        paddingRight: "180px",
         backgroundColor: "#EAF6FB",
         padding: "20px",
         display: "flex",
@@ -26,7 +26,7 @@ const CustomerFocusSection = () => {
       {/* Left Side - Text Content */}
       <div
         style={{
-        paddingLeft:"140px"
+        paddingLeft:"100px"
         
         }}
         data-aos="fade-right" // Animation for left side
