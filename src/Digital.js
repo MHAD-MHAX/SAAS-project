@@ -11,10 +11,10 @@ const CustomerFocusSection = () => {
   }, []);
 
   return (
-    <section
+    <div
       style={{
         backgroundColor: "#EAF6FB",
-        paddingRight: "140px",
+       
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
@@ -31,9 +31,9 @@ const CustomerFocusSection = () => {
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
-          textAlign: "center",
+          textAlign:"left",
           alignItems: "center", // Center the text content
-          marginLeft:"60px"
+          marginLeft:"0px"
         }}
         data-aos="fade-right" // Animation for left side
       >
@@ -44,7 +44,7 @@ const CustomerFocusSection = () => {
             fontWeight: "bold",
           }}
         >
-          Digitala ekosystemet,Utöka er synlighet online
+          Digitala ekosystemet,<br></br>Utöka er synlighet online
         </h1>
         <p
           style={{
@@ -78,14 +78,8 @@ const CustomerFocusSection = () => {
 
       {/* Right Side - Video Content */}
       <div
-        style={{
-             // Center vi
-             // deo vertically
-         marginRight:"40px",
-          flex: "1 1 100%",            // Full width on small screens
-          maxWidth: "400px",
-              // Space between video and text on small screens
-        }}
+        classname="Vidpo"
+        
         data-aos="fade-left" // Animation for the video side
       >
         <video
@@ -105,11 +99,12 @@ const CustomerFocusSection = () => {
           />
           Your browser does not support the video tag.
         </video>
+        
       </div>
 
       {/* Media Query for larger screens */}
      
-    </section>
+    </div>
   );
 };
 

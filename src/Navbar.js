@@ -5,6 +5,7 @@ import CloseIcon from '@mui/icons-material/Close';
 
 
 import Logo from "./Images/LOGO3.jpeg"
+import Profile from "./Images/Profile.png";
 
 const Navbar = () => {
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -35,7 +36,12 @@ const Navbar = () => {
 
           {/* Navbar Title */}
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+            <div >
             <img src={Logo} className='bar-logo'/>
+            <span class="v-btn__content"><i aria-hidden="true" class="v-icon notranslate al icon al icon-user theme--dark"></i></span>
+            <img src={Profile} className="narvaro"/>
+            </div>
+            
           </Typography>
 
           {/* Desktop Menu Items */}
