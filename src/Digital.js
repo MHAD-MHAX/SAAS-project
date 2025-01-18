@@ -53,6 +53,7 @@ const CustomerFocusSection = () => {
             color: "#555",
             lineHeight: "1.6",
             fontWeight: "bold",
+            textAlign:"left"
           
           }}
         >
