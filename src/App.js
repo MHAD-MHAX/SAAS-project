@@ -6,17 +6,15 @@ import "./App.css";
 
 import InfoSection from "./InfoSection";
 import GoogleSection from "./GoogleSection";
-
 import CustomerFocusSection from "./CustomerFocus";
-
 import DigitalEcosystem from "./Digital";
-
 import CustomerReviews from "./CustomerReviews";
 import ContactForm from "./ContactForm";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 
 import Logo from "../src/Images/LOGO3.jpeg";
+import Video from "./Images/Video.mp4";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -36,6 +34,12 @@ function App() {
   return (
     <div className="main-container">
       <div className="container">
+        {/* Background Video */}
+        <video autoplay muted loop className="background-video">
+          <source src={Video} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+
         {/* Header Section */}
         <Navbar />
 
@@ -86,9 +90,9 @@ function App() {
 
       {/* Additional Sections */}
       <InfoSection />
-      <DigitalEcosystem/>
-      <CustomerFocusSection/>
-      <GoogleSection/>
+      <DigitalEcosystem />
+      <CustomerFocusSection />
+      <GoogleSection />
       <CustomerReviews />
       <ContactForm />
       <Footer />
