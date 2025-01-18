@@ -53,7 +53,7 @@ const CustomerFocusSection = () => {
             color: "#555",
             lineHeight: "1.6",
             fontWeight: "bold",
-            textAlign:"left",
+          
           }}
         >
           Vi hjälper dig som lokalt företag att lista din verksamhet på alla
