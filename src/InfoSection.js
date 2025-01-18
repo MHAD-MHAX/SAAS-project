@@ -23,11 +23,11 @@ const ActPlus = () => {
     <section className="actplus-container">
       {/* Partner Logos */}
       <div className="partners">
-        <img src={Google} alt="Google" data-aos="fade-up" />
-        <img src={Tp} alt="TripAdvisor" data-aos="fade-up" />
-        <img src={Fb} alt="Facebook" data-aos="fade-up" />
-        <img src={Gps} alt="Google Maps" data-aos="fade-up" />
-        <img src={Ig} alt="Instagram" data-aos="fade-up" />
+        <img src={Google} alt="Google" data-aos="fade-up" /><br></br>
+        <img src={Tp} alt="TripAdvisor" data-aos="fade-up" /><br></br>
+        <img src={Fb} alt="Facebook" data-aos="fade-up" /><br></br>
+        <img src={Gps} alt="Google Maps" data-aos="fade-up" /><br></br>
+        <img src={Ig} alt="Instagram" data-aos="fade-up" /><br></br>
       </div>
       <button className="partners-btn" data-aos="fade-up">Se alla Partners</button>
 

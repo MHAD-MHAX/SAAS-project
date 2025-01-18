@@ -14,19 +14,26 @@ const CustomerFocusSection = () => {
     <section
       style={{
         backgroundColor: "#EAF6FB",
-        padding: "20px",
+        paddingRight: "140px",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
         flexWrap: "wrap",
         textAlign: "center",
+        gap: "0",
+        minHeight: "100vh", // Ensure it takes full height
       }}
     >
       {/* Left Side - Text Content */}
       <div
         style={{
           padding: "20px",
-          marginLeft: "30px",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          textAlign: "center",
+          alignItems: "center", // Center the text content
+          marginLeft:"40px"
         }}
         data-aos="fade-right" // Animation for left side
       >
@@ -34,7 +41,6 @@ const CustomerFocusSection = () => {
           style={{
             fontSize: "36px",
             color: "#333",
-            textAlign: "left",
             fontWeight: "bold",
           }}
         >
@@ -47,7 +53,6 @@ const CustomerFocusSection = () => {
             fontSize: "16px",
             color: "#555",
             lineHeight: "1.6",
-            textAlign: "left",
             fontWeight: "bold",
           }}
         >
@@ -67,7 +72,6 @@ const CustomerFocusSection = () => {
             border: "none",
             cursor: "pointer",
             fontSize: "16px",
-            float: "left",
           }}
         >
           Läs mer →
@@ -77,10 +81,12 @@ const CustomerFocusSection = () => {
       {/* Right Side - Video Content */}
       <div
         style={{
-          marginRight: "80px",
-          flex: "1 1 100%", // Full width on small screens
+             // Center vi
+             // deo vertically
+         marginRight:"40px",
+          flex: "1 1 100%",            // Full width on small screens
           maxWidth: "400px",
-          marginBottom: "20px", // Space between video and text on small screens
+              // Space between video and text on small screens
         }}
         data-aos="fade-left" // Animation for the video side
       >
@@ -94,7 +100,6 @@ const CustomerFocusSection = () => {
           muted
           playsInline
           loop
-          className="image-left-10"
         >
           <source
             src="https://cda.actlocal.se/assets/videos/Actlocal-1-s.mp4"
@@ -105,19 +110,7 @@ const CustomerFocusSection = () => {
       </div>
 
       {/* Media Query for larger screens */}
-      <style>
-        {`
-          @media (min-width: 768px) {
-            section {
-              flex-direction: row; /* Makes the sections sit side by side */
-              gap: 20px; /* Small gap between sections */
-            }
-            section > div {
-              flex: 1 1 45%; /* Each side takes up 45% of the screen width */
-            }
-          }
-        `}
-      </style>
+     
     </section>
   );
 };

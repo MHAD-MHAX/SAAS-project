@@ -13,6 +13,7 @@ const CustomerFocusSection = () => {
   return (
     <section
       style={{
+        paddingRight: "130px",
         backgroundColor: "#EAF6FB",
         padding: "20px",
         display: "flex",
@@ -25,8 +26,8 @@ const CustomerFocusSection = () => {
       {/* Left Side - Text Content */}
       <div
         style={{
-          padding: "20px",
-          marginLeft: "30px",
+        paddingLeft:"200px"
+        
         }}
         data-aos="fade-right" // Animation for left side
       >
@@ -104,11 +105,13 @@ const CustomerFocusSection = () => {
           @media (min-width: 768px) {
             section {
               flex-direction: row; /* Makes the sections sit side by side */
-              gap: 20px; /* Small gap between sections */
+              gap: 0px; /* Small gap between sections */
             }
             section > div {
               flex: 1 1 45%; /* Each side takes up 45% of the screen width */
             }
+
+
           }
         `}
       </style>

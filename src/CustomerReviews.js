@@ -3,11 +3,14 @@ import "./App.css"; // Add CSS file for styling
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import AOS styles
 
+
+import Pic from "./Images/Pic.jpg";
+
 const Reviews = () => {
   const reviews = [
     {
       name: "Emma",
-      date: "December 18, 2023",
+      date: "December 18, 2024",
       review:
         "Nicholas i Göteborg var väldigt informativ och tog sin tid till att förstå hur vår verksamhet fungerar. Ser fram emot ett långt och bra samarbete. Super kille verkligen.",
       stars: 5,
@@ -15,7 +18,7 @@ const Reviews = () => {
     },
     {
       name: "Mando Amer",
-      date: "December 2, 2023",
+      date: "January 2, 2025",
       review:
         "Super nöjd med helheten, snabb hjälp och respons. Särskilt Lara som alltid finns vid hjälp.",
       stars: 5,
@@ -23,7 +26,7 @@ const Reviews = () => {
     },
     {
       name: "Ghazal Saberian",
-      date: "November 29, 2023",
+      date: "November 29, 2024",
       review:
         "Smidigt service och trevlig personal. Lara, vår kontaktperson, är professionell och engagerad. Tack vare deras arbete. Rekommenderar varmt Act Loca.",
       stars: 5,
@@ -31,21 +34,21 @@ const Reviews = () => {
     },
     {
       name: "M",
-      date: "November 28, 2023",
+      date: "October 8, 2024",
       review: "En mycket bra tjänst, och Laura är en stjärna på att ställa upp oavsett dag och tid.",
       stars: 5,
       logo: "https://upload.wikimedia.org/wikipedia/commons/5/51/Google.png",
     },
     {
       name: "nasim roshan",
-      date: "November 28, 2023",
+      date: "November 28, 2024",
       review: "Tack bästa Lara för ett fantastiskt service.",
       stars: 5,
       logo: "https://upload.wikimedia.org/wikipedia/commons/5/51/Google.png",
     },
     {
       name: "Autohallen I Helsingborg",
-      date: "November 28, 2023",
+      date: "November 2, 2024",
       review:
         "Vi har varit kunder i snart 2 år! Tack Lara för allt stöd ❤️ Från Autohallen i Helsingborg AB",
       stars: 5,
@@ -53,7 +56,7 @@ const Reviews = () => {
     },
     {
       name: "Autohallen I Helsingborg",
-      date: "November 28, 2023",
+      date: "January 8, 2025",
       review:
         "Vi har varit kunder i snart 2 år! Tack Lara för allt stöd ❤️ Från Autohallen i Helsingborg AB",
       stars: 5,
@@ -61,7 +64,7 @@ const Reviews = () => {
     },
     {
       name: "Autohallen I Helsingborg",
-      date: "November 28, 2023",
+      date: "September 28, 2024",
       review:
         "Vi har varit kunder i snart 2 år! Tack Lara för allt stöd ❤️ Från Autohallen i Helsingborg AB",
       stars: 5,
@@ -94,9 +97,9 @@ const Reviews = () => {
         {reviews.slice(0, showAll ? reviews.length : 3).map((review, index) => (
           <div className="review-card" key={index} data-aos="zoom-in">
             <div className="review-header">
-              <div className="review-avatar">{review.name[0]}</div>
+              <div className="review-avatar"><img src={Pic} className="bro-up"/></div>
               <div>
-                <h3>{review.name}</h3>
+                <h2>{review.name}</h2>
                 <p>{review.date}</p>
               </div>
               <img
