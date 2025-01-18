@@ -26,7 +26,7 @@ const CustomerFocusSection = () => {
       {/* Left Side - Text Content */}
       <div
         style={{
-        paddingLeft:"100px"
+        paddingLeft:"00px"
         
         }}
         data-aos="fade-right" // Animation for left side
@@ -35,7 +35,7 @@ const CustomerFocusSection = () => {
           style={{
             fontSize: "36px",
             color: "#333",
-            textAlign: "left",
+            marginLeft:"30px",
             fontWeight: "bold",
           }}
         >
@@ -46,7 +46,7 @@ const CustomerFocusSection = () => {
             fontSize: "16px",
             color: "#555",
             lineHeight: "1.6",
-            textAlign: "left",
+            marginLeft:"30px",
             fontWeight: "bold",
           }}
         >
@@ -62,7 +62,7 @@ const CustomerFocusSection = () => {
             border: "none",
             cursor: "pointer",
             fontSize: "16px",
-            float: "left",
+            
           }}
         >
           Läs mer →

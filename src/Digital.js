@@ -33,7 +33,7 @@ const CustomerFocusSection = () => {
           justifyContent: "center",
           textAlign: "center",
           alignItems: "center", // Center the text content
-          marginLeft:"10px"
+          marginLeft:"60px"
         }}
         data-aos="fade-right" // Animation for left side
       >
