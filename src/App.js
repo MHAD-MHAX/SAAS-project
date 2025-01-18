@@ -14,7 +14,7 @@ import Footer from "./Footer";
 import Navbar from "./Navbar";
 
 import Logo from "../src/Images/LOGO3.jpeg";
-import Video from "./Images/Video.mp4";
+import Video from "./Images/Vid.mp4";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -33,6 +33,7 @@ function App() {
 
   return (
     <div className="main-container">
+       <Navbar />
       <div className="container">
         {/* Background Video */}
         <video autoplay muted loop className="background-video">
@@ -41,7 +42,7 @@ function App() {
         </video>
 
         {/* Header Section */}
-        <Navbar />
+       
 
         {/* Sidebar */}
         {menuOpen && (

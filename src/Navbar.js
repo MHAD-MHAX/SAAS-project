@@ -27,7 +27,7 @@ const Navbar = () => {
   return (
     <>
       {/* Fixed Navbar */}
-      <AppBar position="fixed" color="white" sx={{ zIndex: 1300 }}>
+      <AppBar position="fixed" color="black" sx={{ zIndex: 1300 }}>
         <Toolbar>
           {/* Hamburger Menu Icon for Mobile */}
           <IconButton edge="start" color="inherit" aria-label="menu" onClick={toggleDrawer}>
