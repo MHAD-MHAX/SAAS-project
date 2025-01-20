@@ -2,6 +2,10 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+import CustomerSection from "./CustomerSection";
+
+import CustomerLogo from "./CustomerLogo";
+
 const CustomerFocusSection = () => {
   useEffect(() => {
     AOS.init({
@@ -55,18 +59,20 @@ const CustomerFocusSection = () => {
             fontWeight: "bold",
           }}
         >
-        Slår man ihop allt detta, att ni syns på relevanta plattformar med <br></br>
-        rätt och konsekvent information, varumärkesskyddade. Att ni <br></br>
-        agerar, besvarar och bryr er om era recensioner som kommer in.
+        Slår man ihop allt detta, att ni syns på relevanta <br></br>
+        plattformar med rätt och konsekvent information, <br></br>
+        varumärkesskyddade. Att ni agerar, besvarar och <br></br>
+        bryr er om era recensioner som kommer in.<br></br>
         <br></br>
         <br></br>
         <br></br>
 
 
-        Ni publicerar nyheter samt kampanjer och visar för Google att ni är mån <br></br>
-        om vad som visas om ert företag på nätet. Ihop med vår plattform där vi <br></br>
-        sammanlänkar, optimerar er profil för generella nyckelord som dina <br></br>
-        kunder söker på, så har ni tjänat stora pluspoäng!
+        Ni publicerar nyheter samt kampanjer och visar för Google <br></br>
+        att ni är mån om vad som visas om ert företag på nätet. <br></br>
+        Ihop med vår plattform där vi sammanlänkar, optimerar er  <br></br>
+        profil för generella nyckelord som dina <br></br>
+        kunder söker på, så har ni tjänat stora pluspoäng! <br></br>
         </p>
         <br />
         <button
@@ -113,8 +119,7 @@ const CustomerFocusSection = () => {
         
       </div>
 
-      {/* Media Query for larger screens */}
-     
+<CustomerLogo/>
     </div>
   );
 };

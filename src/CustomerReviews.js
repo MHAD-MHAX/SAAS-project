@@ -1,125 +1,91 @@
-import React, { useState, useEffect } from "react";
-import "./App.css"; // Add CSS file for styling
-import AOS from "aos";
-import "aos/dist/aos.css"; // Import AOS styles
+import React from 'react';
+import { Card, CardContent, Typography, CardHeader, Avatar, Grid, Box, Rating } from '@mui/material';
 
-
-import Pic from "./Images/Pic.jpg";
-
-const Reviews = () => {
+const CustomerReviews = () => {
   const reviews = [
     {
-      name: "Emma",
-      date: "December 18, 2024",
-      review:
-        "Nicholas i Göteborg var väldigt informativ och tog sin tid till att förstå hur vår verksamhet fungerar. Ser fram emot ett långt och bra samarbete. Super kille verkligen.",
-      stars: 5,
-      logo: "https://upload.wikimedia.org/wikipedia/commons/5/51/Google.png",
+      id: 'fe42d906f183b7bc3e8d954d0c99630d',
+      name: 'Emma',
+      date: 'January 18, 2025',
+      text: 'Nicholas i Göteborg var väldigt informativ och tog sin tid till att förstå hur vår verksamhet fungerar. Ser fram emot ett långt och bra samarbete.',
+      image: 'https://lh3.googleusercontent.com/a/ACg8ocKIoklxL2mwHaXB0DrfgUSBYDfjAtRxPEqnXCz9QSSCV9Ok7w=w40-h40-c-rp-mo-br100',
+      rating: 5, // Rating value out of 5
     },
     {
-      name: "Mando Amer",
-      date: "January 2, 2025",
-      review:
-        "Super nöjd med helheten, snabb hjälp och respons. Särskilt Lara som alltid finns vid hjälp.",
-      stars: 5,
-      logo: "https://upload.wikimedia.org/wikipedia/commons/5/51/Google.png",
+      id: '18f483a9055fe2c01a6a824ff71e5d22',
+      name: 'M',
+      date: 'November 28, 2024',
+      text: 'En mycket bra tjänst, och Laura är en stjärna på att ställa upp oavsett dag och tid.',
+      image: 'https://lh3.googleusercontent.com/a/ACg8ocKNvLjCZGkknKFCUpsbl-2Wos_YQwekocmhOIp6Udwh1T4kCw=w40-h40-c-rp-mo-br100',
+      rating: 4, // Rating value out of 5
     },
     {
-      name: "Ghazal Saberian",
-      date: "November 29, 2024",
-      review:
-        "Smidigt service och trevlig personal. Lara, vår kontaktperson, är professionell och engagerad. Tack vare deras arbete. Rekommenderar varmt Act Loca.",
-      stars: 5,
-      logo: "https://upload.wikimedia.org/wikipedia/commons/5/51/Google.png",
+      id: '1a2b3c4d5e6f7g8h9i0j',
+      name: 'Olivia',
+      date: 'January 10, 2024',
+      text: 'Jag är verkligen imponerad av hur snabbt och effektivt teamet hanterade vår förfrågan. Tjänsten har verkligen hjälpt oss att förbättra vår synlighet online.',
+      image: 'https://lh3.googleusercontent.com/a/ACg8ocLfBr91m8oCOlW0sJ9pOT9JpDLyZA8NjJ0xK5MRKZYQQjl0b8I=w40-h40-c-rp-mo-br100',
+      rating: 5, // Rating value out of 5
+    },
+
+   
+    {
+      id: '1a2b3c4d5e6f7g8h9i0j',
+      name: 'Olivia',
+      date: 'January 10, 2024',
+      text: 'Jag är verkligen imponerad av hur snabbt och effektivt teamet hanterade vår förfrågan. Tjänsten har verkligen hjälpt oss att förbättra vår synlighet online.',
+      image: 'https://lh3.googleusercontent.com/a/ACg8ocLfBr91m8oCOlW0sJ9pOT9JpDLyZA8NjJ0xK5MRKZYQQjl0b8I=w40-h40-c-rp-mo-br100',
+      rating: 5, // Rating value out of 5
+    },
+     {/*
+    {
+      id: '1a2b3c4d5e6f7g8h9i0j',
+      name: 'Olivia',
+      date: 'January 10, 2024',
+      text: 'Jag är verkligen imponerad av hur snabbt och effektivt teamet hanterade vår förfrågan. Tjänsten har verkligen hjälpt oss att förbättra vår synlighet online.',
+      image: 'https://lh3.googleusercontent.com/a/ACg8ocLfBr91m8oCOlW0sJ9pOT9JpDLyZA8NjJ0xK5MRKZYQQjl0b8I=w40-h40-c-rp-mo-br100',
+      rating: 5, // Rating value out of 5
     },
     {
-      name: "M",
-      date: "October 8, 2024",
-      review: "En mycket bra tjänst, och Laura är en stjärna på att ställa upp oavsett dag och tid.",
-      stars: 5,
-      logo: "https://upload.wikimedia.org/wikipedia/commons/5/51/Google.png",
-    },
-    {
-      name: "nasim roshan",
-      date: "November 28, 2024",
-      review: "Tack bästa Lara för ett fantastiskt service.",
-      stars: 5,
-      logo: "https://upload.wikimedia.org/wikipedia/commons/5/51/Google.png",
-    },
-    {
-      name: "Autohallen I Helsingborg",
-      date: "November 2, 2024",
-      review:
-        "Vi har varit kunder i snart 2 år! Tack Lara för allt stöd ❤️ Från Autohallen i Helsingborg AB",
-      stars: 5,
-      logo: "https://upload.wikimedia.org/wikipedia/commons/5/51/Google.png",
-    },
-    {
-      name: "Autohallen I Helsingborg",
-      date: "January 8, 2025",
-      review:
-        "Vi har varit kunder i snart 2 år! Tack Lara för allt stöd ❤️ Från Autohallen i Helsingborg AB",
-      stars: 5,
-      logo: "https://upload.wikimedia.org/wikipedia/commons/5/51/Google.png",
-    },
-    {
-      name: "Autohallen I Helsingborg",
-      date: "September 28, 2024",
-      review:
-        "Vi har varit kunder i snart 2 år! Tack Lara för allt stöd ❤️ Från Autohallen i Helsingborg AB",
-      stars: 5,
-      logo: "https://upload.wikimedia.org/wikipedia/commons/5/51/Google.png",
-    },
+      id: '2b3c4d5e6f7g8h9i0j1a',
+      name: 'Liam',
+      date: 'December 20, 2023',
+      text: 'Vi har haft ett fantastiskt samarbete med företaget och är väldigt nöjda med resultaten. Vi såg en ökning i trafik på vår webbplats redan efter en vecka.',
+      image: 'https://lh3.googleusercontent.com/a/ACg8ocMspzvK7v5fAYUnjjgkAlNnfpZ9VHTnkB5pfdXk8wXBaN7Fwao=w40-h40-c-rp-mo-br100',
+      rating: 4, // Rating value out of 5
+    }
+      */}
   ];
 
-  const renderStars = (count) => {
-    return "⭐️".repeat(count);
-  };
-
-  const [showAll, setShowAll] = useState(false);
-
-  const handleShowMore = () => {
-    setShowAll(true);
-  };
-
-  useEffect(() => {
-    AOS.init({ duration: 1000 }); // Initialize AOS with duration
-  }, []);
-
   return (
-    <div className="reviews-section" data-aos="fade-up">
-      <h2 data-aos="fade-up">Vad säger våra kunder om oss?</h2>
-      <p data-aos="fade-up">
-        Vi är stolta över förtroendet som vi fått att driva mer trafik och hjälpa
-        företag, stora som små, att synas bättre på nätet.
-      </p>
-      <div className="reviews-grid">
-        {reviews.slice(0, showAll ? reviews.length : 3).map((review, index) => (
-          <div className="review-card" key={index} data-aos="zoom-in">
-            <div className="review-header">
-              <div className="review-avatar"><img src={Pic} className="bro-up"/></div>
-              <div>
-                <h2>{review.name}</h2>
-                <p>{review.date}</p>
-              </div>
-              <img
-                src={review.logo}
-                alt="Google Logo"
-                className="review-logo"
+    <Box sx={{ backgroundColor: 'white', padding: 5 }}>
+      <Typography variant="h2" align="center" sx={{ paddingBottom: 5, fontWeight:'bold' }}>
+        Vad säger våra kunder om oss?
+      </Typography>
+      <Typography variant="body1" align="center" sx={{ marginBottom: 5 }}>
+        Vi är stolta över förtroendet som vi fått att driva mer trafik och hjälpa företag, stora som små, att synas bättre på nätet.
+      </Typography>
+      <Grid container spacing={4} justifyContent="center">
+        {reviews.map((review) => (
+          <Grid item xs={12} sm={6} md={4} key={review.id} sx={{ paddingBottom: 3 }}>
+            <Card sx={{ display: 'flex', flexDirection: 'column', height: '100%', padding: 2 }}>
+              <CardHeader
+                avatar={<Avatar src={review.image} alt={review.name} />}
+                title={review.name}
+                subheader={review.date}
               />
-            </div>
-            <p className="review-text">{review.review}</p>
-            <div className="review-stars">{renderStars(review.stars)}</div>
-          </div>
+              <CardContent sx={{ flexGrow: 1 }}>
+                <Rating value={review.rating} precision={0.5} readOnly />
+                <Typography variant="body2" sx={{ marginTop: 1 }}>
+                  {review.text}
+                </Typography>
+              </CardContent>
+            </Card>
+          </Grid>
         ))}
-      </div>
-      {!showAll && (
-        <button onClick={handleShowMore} className="read-more-button">
-          Läs mer
-        </button>
-      )}
-    </div>
+      </Grid>
+    </Box>
   );
 };
 
-export default Reviews;
+export default CustomerReviews;

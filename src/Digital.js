@@ -57,11 +57,10 @@ const CustomerFocusSection = () => {
           
           }}
         >
-          Vi hjälper dig som lokalt företag att lista din verksamhet på alla
-          <br />
-          viktiga digitala plattformar. Syns du inte så finns du inte brukar
-          <br />
-          man säga, i detta sammanhang så stämmer det faktiskt!
+          Vi hjälper dig som lokalt företag att lista din verksamhet <br />
+          på alla viktiga digitala plattformar. Syns du inte så finns <br />
+          du inte brukar man säga, i detta sammanhang så stämmer det <br />
+          faktiskt!<br />
         </p>
         <br />
         <button
