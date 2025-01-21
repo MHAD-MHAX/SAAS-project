@@ -67,7 +67,7 @@ const ContactUs = () => {
       borderRadius: '8px', // Optional: rounded corners
     }}
   >
-    <Typography variant="h4" gutterBottom>
+    <Typography variant="h4" gutterBottom sx={{ textAlign:'center', paddingBottom:'30px', fontWeight:'bold'}}>
       Boka ett möte med oss
     </Typography>
     <Typography variant="body1" paragraph>
@@ -207,9 +207,9 @@ const ContactUs = () => {
           <Button
             type="submit"
             variant="contained"
-            color="primary"
+            
             fullWidth
-            sx={{ marginTop: 2 }}
+            sx={{ marginTop: 2, backgroundColor:'black', color:'white' }}
           >
             Skicka
           </Button>

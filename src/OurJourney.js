@@ -44,12 +44,12 @@ const OurJourney = () => {
                   zIndex: 1, // Ensure the text is above the image
                 }}
               >
-                Sweden
+                Aungun Spa Therapy
               </Typography>
               <Button
                 href="/kunder/aertholmsgarden"
                 variant="contained"
-                color="primary"
+                
                 sx={{
                   position: 'absolute',
                   bottom: '20px', // Position button near the bottom of the image
@@ -57,6 +57,8 @@ const OurJourney = () => {
                   transform: 'translateX(-50%)',
                   borderRadius: 20,
                   width: '150px',
+                  backgroundColor:'black', 
+                  color:'white'
                 }}
               >
                 Läs mer
@@ -91,12 +93,11 @@ const OurJourney = () => {
                   zIndex: 1, // Ensure the text is above the image
                 }}
               >
-                Barbershop
+                Best Barber
               </Typography>
               <Button
                 href="/kunder/yogapalatset"
                 variant="contained"
-                color="primary"
                 sx={{
                   position: 'absolute',
                   bottom: '20px',
@@ -104,6 +105,8 @@ const OurJourney = () => {
                   transform: 'translateX(-50%)',
                   borderRadius: 20,
                   width: '150px',
+                  backgroundColor:'black', 
+                  color:'white'
                 }}
               >
                 Läs mer
@@ -116,8 +119,8 @@ const OurJourney = () => {
       <Button
         href="/kunder"
         variant="contained"
-        color="primary"
-        sx={{ borderRadius: 20, width: '250px', marginTop: '40px' }}
+    
+        sx={{ borderRadius: 20, width: '250px', marginTop: '40px',  backgroundColor:'black', color:'white' }}
       >
         Se fler kunder
       </Button>

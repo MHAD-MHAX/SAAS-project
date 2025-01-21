@@ -595,7 +595,7 @@ h2 {
 }
 
 .step-card.highlight {
-  background-color: #007bff; /* Blue highlight */
+  background-color: black; /* Blue highlight */
   color: white;
 }
 

@@ -68,12 +68,14 @@ const Home = () => {
           <Box sx={{ display: 'flex', justifyContent: 'flex-start' }}>
             <Button
               variant="contained"
-              color="primary"
+              color=""
               sx={{
                 margin: '0 8px',
                 width: '200px',
                 borderRadius: '50px',
                 padding: '10px 20px',
+                backgroundColor: 'black',
+                color:'white'
               }}
               href="/skanna"
             >

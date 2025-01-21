@@ -66,7 +66,7 @@ const CustomerFocusSection = () => {
         <br />
         <button
           style={{
-            backgroundColor: "#0066CC",
+            backgroundColor: "black",
             color: "#fff",
             padding: "10px 20px",
             borderRadius: "25px",

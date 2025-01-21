@@ -370,9 +370,9 @@ style={{backgroundColor:'white', color:'black'}}
                 <Button
                   type="submit"
                   variant="contained"
-                  color="primary"
+                  
                   size="large"
-                  sx={{ borderRadius: "20px" }}
+                  sx={{ borderRadius: "20px", backgroundColor:'black', color:'white' }}
                 >
                   Skicka
                 </Button>

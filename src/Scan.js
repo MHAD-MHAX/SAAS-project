@@ -94,7 +94,7 @@ const Scan = () => {
                 <Box
                   sx={{
                     position: "",
-                    paddingLeft:'8px',
+                    paddingLeft:'20px',
                     bgcolor: "white",
                     borderRadius: 1,
                   }}
@@ -143,10 +143,11 @@ const Scan = () => {
 
                     <Button
                       variant="contained"
-                      color="primary"
+                      style={{backgroundColor:'black', color:'white'}}
                       fullWidth
                       size="large"
                     >
+                         
                       SKANNA NU
                     </Button>
                     </form>

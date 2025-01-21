@@ -12,7 +12,7 @@ import Google from "./Images/Google.png";
 import Pulse from "./Images/Pulse (1).png";
 import Shield from "./Images/Shield.png";
 import Stack from "./Images/Stack.png";
-import Check from "./Images/Check.png";
+import Check from "./Images/Check3.png";
 
 const ActPlus = () => {
   useEffect(() => {
@@ -23,7 +23,6 @@ const ActPlus = () => {
     <section className="actplus-container">
       {/* Partner Logos */}
       <div className="partners">
-        <br></br>
         <img src={Google} alt="Google" data-aos="fade-up" /><br></br>
         <img src={Tp} alt="TripAdvisor" data-aos="fade-up" /><br></br>
         <img src={Fb} alt="Facebook" data-aos="fade-up" /><br></br>

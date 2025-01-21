@@ -51,7 +51,7 @@ const AboutUs = () => {
           Resan startade i vår vackra huvudstad Stockholm, därefter har vi öppnat kontor i Helsingborg (som numera blivit vårt huvudkontor) och även satellitkontor i Göteborg och Norrköping.
         </Typography>
         <br></br>
-        <Button variant="contained" sx={{ borderRadius: '30px', backgroundColor: '#1976d2' }}>
+        <Button variant="contained" sx={{ borderRadius: '30px', backgroundColor: 'black' }}>
         Vår personal
       </Button>
       </Box>

@@ -1,5 +1,6 @@
 import React from 'react';
-import { Box, Button, Typography, Grid, IconButton, Container, Paper} from '@mui/material';
+import { Box, Button, Typography, Grid, IconButton, Container, Paper, List, ListItem, ListItemText, ListItemAvatar,Avatar, } from '@mui/material';
+import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import PhoneIcon from '@mui/icons-material/Phone';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import CheckIcon from '@mui/icons-material/Check';
@@ -17,105 +18,88 @@ const LandingPage = () => {
         backgroundColor:'#fafafa'
     }}>
       <main>
-    
-      <Box sx={{ padding: 'px 0', position: 'relative' }}>
       <Box
-        sx={{
-          height: '150vh',
-          backgroundImage: 'url("https://cda.actlocal.se/assets/Depositphotos_106262598_l-2015.jpg")',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          position: 'relative',
-        }}
-      >
-        <Box
-          sx={{
-            position: 'absolute',
-            top: '52%',
-            left: '50%',
-            transform: 'translateX(-50%) translateY(-50%)',
-            color: 'white',
-            textAlign: 'center',
-            maxWidth: '90%',
-          }}
-        >
-          <Grid container spacing={2} justifyContent="center">
-            <Grid item xs={12} sm={6}>
-              <Typography variant="h3" gutterBottom>
-                <span style={{ fontSize: '1.5rem', fontWeight: 'bold' }}>SEO-optimerad</span>
-                <br />
-                <Typography variant="h3" gutterBottom>
-                  <span style={{ fontSize: '3.5rem', fontWeight: 'bold' }}>Landingssajt</span>
-                </Typography>
-              </Typography>
-              <Typography variant="h5" sx={{ maxWidth: '450px', margin: '0 auto' }}>
-                Fördelar med landingssajter
-              </Typography>
-              <Box sx={{ mt: 3 }}>
-                <ul style={{ listStyleType: 'none', padding: 0 }}>
-                  <li style={{ display: 'flex', alignItems: 'center' }}>
-                    <CheckIcon sx={{ color: 'green', marginRight: '8px' }} />
-                    Hemsida med igenkänningsfaktor
-                  </li>
-                  <br />
-                  <li style={{ display: 'flex', alignItems: 'center' }}>
-                    <CheckIcon sx={{ color: 'green', marginRight: '8px' }} />
-                    Mätbar marknadsföring
-                  </li>
-                  <br />
-                  <li style={{ display: 'flex', alignItems: 'center' }}>
-                    <CheckIcon sx={{ color: 'green', marginRight: '8px' }} />
-                    Toppa sökresultaten
-                  </li>
-                </ul>
-              </Box>
-            </Grid>
-
-            {/* The second grid item with a larger width */}
-            <Grid item xs={12} sm={6}>
-              <Box
-                sx={{
-                  backgroundColor: 'white',
-                  padding: '24px',
-                  borderRadius: '8px',
-                  boxShadow: 3,
-                  color: 'black',
-                  width: '100%',
-                  maxWidth: '500px',
-                  margin: '0 auto',
-                }}
-              >
-                <Typography variant="h5" gutterBottom sx={{ fontSize: '2.0em', fontWeight: 'bold' }}>
-                  Varför en landningssajt?
-                </Typography>
-                <Typography variant="body1">
-                  Har du kört fast med din befintliga hemsida eller vill nå
-                  <br />
-                  topplaceringarna på Google i ett hårt konkurrensutsatt område
-                  <br />
-                  eller nisch? Då kan en SEO-optimerad landningssajt vara det som
-                  <br />
-                  behövs.
-                  <br />
-                  <br />
-                  Kortfattat beskrivet så är en landningssajt en extern och egen
-                  <br />
-                  hemsida som vi sätter upp med fokus på en enda sak, att ranka
-                  <br />
-                  så högt upp som möjligt på Google på ett specifikt sökord.
-                  <br />
-                  Därefter vill vi självklart att besökarna ska konvertera till ett
-                  köp
-                  <br />
-                  när de väl surfar in på sajten men där är vi inne på nästa steg!
-                  <br />
-                </Typography>
-              </Box>
-            </Grid>
+      sx={{
+        position: "relative",
+        height: "1000px",
+        backgroundImage: "url('https://cda.actlocal.se/assets/Depositphotos_106262598_l-2015.jpg')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        color: "white",
+        textAlign: "center",
+        overflow: "hidden",
+      }}
+    >
+      <Container>
+        <Grid container alignItems="center">
+          {/* Left Column */}
+          <Grid item xs={12} sm={5} md={6}>
+            <Typography variant="h3" component="h1" sx={{ mb: 3 }}>
+              <span style={{ fontSize: "1.5rem", fontWeight:'bold' }}>SEO-optimerad</span>
+              <br />
+              <span style={{ fontSize: "3.5rem", fontWeight:'bold' }}> Landingssajt</span>
+            </Typography>
+            <Typography variant="h5" component="h2" sx={{ mt: 5, maxWidth: "450px", }}>
+              Fördelar med landingssajter
+            </Typography>
+            <List sx={{ mt: 2 }}>
+              {[
+                "Hemsida med igenkänningsfaktor",
+                "Mätbar marknadsföring",
+                "Toppa sökresultaten",
+              ].map((text, index) => (
+                <ListItem key={index}>
+                  <ListItemAvatar>
+                    <Avatar
+                      sx={{
+                        bgcolor: "rgb(57, 201, 23)",
+                        height: "40px",
+                        width: "40px",
+                      }}
+                    >
+                      <CheckCircleIcon sx={{ color: "white" }} />
+                    </Avatar>
+                  </ListItemAvatar>
+                  <ListItemText primary={text} />
+                </ListItem>
+              ))}
+            </List>
           </Grid>
-        </Box>
-      </Box>
+
+          {/* Right Column */}
+          <Grid item xs={12} sm={7} md={6}>
+            <Paper
+              elevation={3}
+              sx={{
+                p: 5,
+                bgcolor: "white",
+                color: "black",
+                borderRadius: "8px",
+                mt: { xs: 4, sm: 0 },
+              }}
+            >
+              <Typography variant="h4" component="h2" sx={{ mb: 5 }}>
+                Varför en landningssajt?
+              </Typography>
+              <Typography paragraph>
+                Har du kört fast med din befintliga hemsida eller vill nå topplaceringarna på Google i ett hårt
+                konkurrensutsatt område eller nisch? Då kan en SEO-optimerad landningssajt vara det som behövs.
+              </Typography>
+              <Typography paragraph>
+                Kortfattat beskrivet så är en landningssajt en extern och egen hemsida som vi sätter upp med fokus på
+                en enda sak, att ranka så högt upp som möjligt på Google på ett specifikt sökord. Därefter vill vi
+                självklart att besökarna ska konvertera till ett köp när de väl surfar in på sajten men där är vi inne
+                på nästa steg!
+              </Typography>
+            </Paper>
+          </Grid>
+        </Grid>
+      </Container>
     </Box>
+
 
     
         <Box sx={{ backgroundColor: 'rgb(237, 245, 255)', paddingBottom: '85px', color:'black',}}>

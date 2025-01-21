@@ -237,7 +237,7 @@ stat: "418%",
                 sx={{
                   padding: "24px",
                   borderRadius: "8px",
-                  backgroundColor: step.highlight ? "#0072BB" : "#ffffff",
+                  backgroundColor: step.highlight ? "black" : "#ffffff",
                   color: step.highlight ? "#ffffff" : "#000000",
                   height: "100%",
                   mb: 2,

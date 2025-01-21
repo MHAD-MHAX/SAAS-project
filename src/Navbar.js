@@ -106,6 +106,7 @@ const Navbar = () => {
           left: 0,
           right: 0,
           borderColor: 'white',
+          backgroundColor:'black'
         }}
       >
         <Toolbar sx={{ display: 'flex', justifyContent: 'space-between', height: '64px' }}>
@@ -121,22 +122,13 @@ const Navbar = () => {
           </IconButton>
 
           {/* Logo */}
-          <Box sx={{ display: 'flex', alignItems: 'center' }}>
-            <a href="/" aria-current="page">
-              <img
-                src={Logo}
-                alt="Logo"
-                width="40"
-                className="none_scrolled_logo"
-              />
-            </a>
-          </Box>
+
 
           {/* Desktop navigation links */}
           <Box sx={{ display: { xs: 'none', md: 'flex' }, alignItems: 'center' }}>
             {/* Tjänster Dropdown */}
             <Button
-              sx={{ color: 'black', textTransform: 'none' }}
+              sx={{ color: 'White', textTransform: 'none' }}
               aria-controls="tjanster-menu"
               aria-haspopup="true"
               onClick={handleMenuOpen}
@@ -203,19 +195,31 @@ const Navbar = () => {
   </Menu>
 
 
-            <Button sx={{ color: 'black', textTransform: 'none' }} href="/about">
+            <Button sx={{ color: 'White', textTransform: 'none' }} href="/about">
               Om oss
             </Button>
-            <Button sx={{ color: 'black', textTransform: 'none' }} href="/contact">
+            <Button sx={{ color: 'White', textTransform: 'none' }} href="/contact">
               Kontakta oss
             </Button>
           </Box>
+
+          <Box sx={{ display: 'flex', alignItems: 'center', paddingLeft:'170px'}}>
+
+<a href="/" aria-current="page">
+  <img
+    src={Logo}
+    alt="Logo"
+    width="40"
+    className="none_scrolled_logo"
+  />
+</a>
+</Box>
 
           {/* Spacer */}
           <Box sx={{ flexGrow: 1 }} />
 
           {/* Contact and login buttons */}
-          <Box sx={{ display: { xs: 'none', md: 'flex' }, alignItems: 'center' }}>
+          <Box sx={{ display: { xs: 'none', md: 'flex' }, alignItems: 'center',  color: 'white', }}>
             <Button
               href="tel:010 173 40 10"
               sx={{
@@ -233,7 +237,7 @@ const Navbar = () => {
               href="/"
               sx={{
                 color: 'white',
-                backgroundColor: 'primary.main',
+                backgroundColor: 'black',
                 textTransform: 'none',
                 fontSize: '16px',
                 display: 'flex',
