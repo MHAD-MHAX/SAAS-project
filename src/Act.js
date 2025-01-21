@@ -86,19 +86,19 @@ const Act = () => {
               <Typography variant="h4" gutterBottom sx={{fontWeight:'bold', fontSize:'2.5em'}} >
                 Trovärdighet hos Google
               </Typography>
-              <Typography variant="body1" paragraph sx={{  fontSize:'1.0em' , width:'900px' }}>
+              <Typography variant="body1" paragraph >
               Anledningen att du ska synas på alla dessa plattformar med din <br></br>
               företagsinformation är för att de har hög <br></br>
               trovärdighet hos Google.<br></br>
               </Typography>
-              <Typography variant="body1" paragraph sx={{  fontSize:'1.0em' , width:'900px' }}>
+              <Typography variant="body1" paragraph >
               För varje trovärdig plattform som du syns på med korrekt <br></br>
               och konsekvent information så tjänar du som företag en<br></br> 
               ”röst” i Googles ögon. För varje plattform som du syns på <br></br>
               med felaktig information så kan det vara direkt skadligt <br></br> 
               mot ditt företag.<br></br> 
               </Typography>
-              <Typography variant="body1" paragraph sx={{  fontSize:'1.0em' , width:'900px' }}>
+              <Typography variant="body1" paragraph >
               Google vill kunna känna sig säker på att informationen<br></br>
               som presenteras på er Google My Business-profil stämmer <br></br>
               med 100% säkerhet. Detta gör i sin tur att Google väljer<br></br>
@@ -138,13 +138,13 @@ const Act = () => {
               <Typography variant="h3" gutterBottom  sx={{fontWeight:'bold', fontSize:'2.5em'}}>
                 Hantera ert företag från ett inlogg
               </Typography>
-              <Typography variant="body1" paragraph sx={{  fontSize:'1.0em' , width:'900px' }}>
+              <Typography variant="body1" paragraph >
               Vi vill göra det enkelt för dig som företagare att hålla koll på era<br></br>
                företagsuppgifter. Att synas med korrekt och konsekvent<br></br>
                 information är något som både dina kunder och Google älskar. <br></br>
                 Win-Win!<br></br>
               </Typography>
-              <Typography variant="body1" paragraph sx={{  fontSize:'1.0em' , width:'900px' }}>
+              <Typography variant="body1" paragraph >
               Med Act+ kan du hantera alla företagsuppgifter i realtid från en <br></br>
               och samma plattform. Har ni speciella öppettider under <br></br>
               midsommar eller jul? Ändra på ett ställe. Har ni en nyhet att  <br></br>
@@ -177,7 +177,7 @@ const Act = () => {
               Posta inlägg i digitala <br></br>
               ekosystemet
               </Typography>
-              <Typography variant="body1" paragraph sx={{  fontSize:'1.0em' , width:'900px' }}>
+              <Typography variant="body1" paragraph >
                Från vår plattform så har du även möjlighet att posta både<br></br>
                nyheter/erbjudanden och inlägg på alla kopplade plattformar.<br></br>
                Du kan te.x. posta ett inlägg om att ni har en ny produkt<br></br>
@@ -186,7 +186,7 @@ const Act = () => {
                tydligt för både era kunder och <br></br>
                Googla att uppfatta budskapet och hjälpa till att sprida det!<br></br>
               </Typography>
-              <Typography variant="body1" paragraph sx={{  fontSize:'1.0em' , width:'900px' }}>
+              <Typography variant="body1" paragraph >
               Har ni ett tillfälligt erbjudande? Stick ut ur mängden mot dina<br></br>
               konkurrenter genom att posta det direkt synligt på er Google<br></br>
               My Business-profil i sökresultatet! Det är inte bara viktigt <br></br>
