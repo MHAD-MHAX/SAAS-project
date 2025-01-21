@@ -5,12 +5,14 @@ import Barber from "./Images/Barber.jpg";
 
 const OurJourney = () => {
   return (
-    <Box sx={{ padding: '40px', backgroundColor:'white', textAlign: 'center' }}>
-      <Typography variant="h4" gutterBottom 
-      sx={{
-        color:'black',
-        fontWeight:'bold',
-      }}
+    <Box sx={{ padding: '40px', backgroundColor: 'white', textAlign: 'center' }}>
+      <Typography
+        variant="h4"
+        gutterBottom
+        sx={{
+          color: 'black',
+          fontWeight: 'bold',
+        }}
       >
         Framgångsresor
       </Typography>
@@ -24,11 +26,26 @@ const OurJourney = () => {
               sx={{
                 position: 'relative',
                 height: 400,
-                backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${Amsterdam})` , 
+                backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${Amsterdam})`,
                 backgroundPosition: 'center',
                 backgroundSize: 'cover',
               }}
             >
+              {/* Text on top of the image */}
+              <Typography
+                variant="h5"
+                sx={{
+                  position: 'absolute',
+                  top: '100px',
+                  left: '50%',
+                  transform: 'translateX(-50%)',
+                  color: 'white',
+                  fontWeight: 'bold',
+                  zIndex: 1, // Ensure the text is above the image
+                }}
+              >
+                Amsterdam
+              </Typography>
               <Button
                 href="/kunder/aertholmsgarden"
                 variant="contained"
@@ -45,17 +62,10 @@ const OurJourney = () => {
                 Läs mer
               </Button>
             </CardMedia>
-            <CardContent>
-              <Typography variant="h6" sx={{ color: 'white' }}>
-                Ärtholmsgården
-              </Typography>
-            </CardContent>
           </Card>
         </Grid>
 
-
-
-        {/* Card 4: YogaPalatset */}
+        {/* Card 2: YogaPalatset */}
         <Grid item xs={12} sm={6}>
           <Card sx={{ boxShadow: 'none', elevation: 0 }}>
             <CardMedia
@@ -68,6 +78,21 @@ const OurJourney = () => {
                 backgroundSize: 'cover',
               }}
             >
+              {/* Text on top of the image */}
+              <Typography
+                variant="h5"
+                sx={{
+                  position: 'absolute',
+                  top: '100px',
+                  left: '50%',
+                  transform: 'translateX(-50%)',
+                  color: 'white',
+                  fontWeight: 'bold',
+                  zIndex: 1, // Ensure the text is above the image
+                }}
+              >
+                Sweden
+              </Typography>
               <Button
                 href="/kunder/yogapalatset"
                 variant="contained"
@@ -84,11 +109,6 @@ const OurJourney = () => {
                 Läs mer
               </Button>
             </CardMedia>
-            <CardContent>
-              <Typography variant="h6" sx={{ color: 'white' }}>
-                YogaPalatset
-              </Typography>
-            </CardContent>
           </Card>
         </Grid>
       </Grid>
