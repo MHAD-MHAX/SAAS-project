@@ -23,6 +23,7 @@ const ActPlus = () => {
     <section className="actplus-container">
       {/* Partner Logos */}
       <div className="partners">
+        <br></br>
         <img src={Google} alt="Google" data-aos="fade-up" /><br></br>
         <img src={Tp} alt="TripAdvisor" data-aos="fade-up" /><br></br>
         <img src={Fb} alt="Facebook" data-aos="fade-up" /><br></br>

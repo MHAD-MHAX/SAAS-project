@@ -44,7 +44,7 @@ const OurJourney = () => {
                   zIndex: 1, // Ensure the text is above the image
                 }}
               >
-                Amsterdam
+                Sweden
               </Typography>
               <Button
                 href="/kunder/aertholmsgarden"
@@ -91,7 +91,7 @@ const OurJourney = () => {
                   zIndex: 1, // Ensure the text is above the image
                 }}
               >
-                Sweden
+                Barbershop
               </Typography>
               <Button
                 href="/kunder/yogapalatset"
