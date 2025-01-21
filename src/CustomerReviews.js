@@ -1,88 +1,112 @@
 import React from 'react';
-import { Card, CardContent, Typography, CardHeader, Avatar, Grid, Box, Rating } from '@mui/material';
+import { Grid, Card, CardContent, Typography, Avatar, Box, Button, Rating } from '@mui/material';
 
 const CustomerReviews = () => {
-  const reviews = [
-    {
-      id: 'fe42d906f183b7bc3e8d954d0c99630d',
-      name: 'Emma',
-      date: 'January 18, 2025',
-      text: 'Nicholas i Göteborg var väldigt informativ och tog sin tid till att förstå hur vår verksamhet fungerar. Ser fram emot ett långt och bra samarbete.',
-      image: 'https://lh3.googleusercontent.com/a/ACg8ocKIoklxL2mwHaXB0DrfgUSBYDfjAtRxPEqnXCz9QSSCV9Ok7w=w40-h40-c-rp-mo-br100',
-      rating: 5, // Rating value out of 5
-    },
-    {
-      id: '18f483a9055fe2c01a6a824ff71e5d22',
-      name: 'M',
-      date: 'November 28, 2024',
-      text: 'En mycket bra tjänst, och Laura är en stjärna på att ställa upp oavsett dag och tid.',
-      image: 'https://lh3.googleusercontent.com/a/ACg8ocKNvLjCZGkknKFCUpsbl-2Wos_YQwekocmhOIp6Udwh1T4kCw=w40-h40-c-rp-mo-br100',
-      rating: 4, // Rating value out of 5
-    },
-    {
-      id: '1a2b3c4d5e6f7g8h9i0j',
-      name: 'Olivia',
-      date: 'January 10, 2024',
-      text: 'Jag är verkligen imponerad av hur snabbt och effektivt teamet hanterade vår förfrågan. Tjänsten har verkligen hjälpt oss att förbättra vår synlighet online.',
-      image: 'https://lh3.googleusercontent.com/a/ACg8ocLfBr91m8oCOlW0sJ9pOT9JpDLyZA8NjJ0xK5MRKZYQQjl0b8I=w40-h40-c-rp-mo-br100',
-      rating: 5, // Rating value out of 5
-    },
-
-   
-    {
-      id: '1a2b3c4d5e6f7g8h9i0j',
-      name: 'Olivia',
-      date: 'January 10, 2024',
-      text: 'Jag är verkligen imponerad av hur snabbt och effektivt teamet hanterade vår förfrågan. Tjänsten har verkligen hjälpt oss att förbättra vår synlighet online.',
-      image: 'https://lh3.googleusercontent.com/a/ACg8ocLfBr91m8oCOlW0sJ9pOT9JpDLyZA8NjJ0xK5MRKZYQQjl0b8I=w40-h40-c-rp-mo-br100',
-      rating: 5, // Rating value out of 5
-    },
-     {/*
-    {
-      id: '1a2b3c4d5e6f7g8h9i0j',
-      name: 'Olivia',
-      date: 'January 10, 2024',
-      text: 'Jag är verkligen imponerad av hur snabbt och effektivt teamet hanterade vår förfrågan. Tjänsten har verkligen hjälpt oss att förbättra vår synlighet online.',
-      image: 'https://lh3.googleusercontent.com/a/ACg8ocLfBr91m8oCOlW0sJ9pOT9JpDLyZA8NjJ0xK5MRKZYQQjl0b8I=w40-h40-c-rp-mo-br100',
-      rating: 5, // Rating value out of 5
-    },
-    {
-      id: '2b3c4d5e6f7g8h9i0j1a',
-      name: 'Liam',
-      date: 'December 20, 2023',
-      text: 'Vi har haft ett fantastiskt samarbete med företaget och är väldigt nöjda med resultaten. Vi såg en ökning i trafik på vår webbplats redan efter en vecka.',
-      image: 'https://lh3.googleusercontent.com/a/ACg8ocMspzvK7v5fAYUnjjgkAlNnfpZ9VHTnkB5pfdXk8wXBaN7Fwao=w40-h40-c-rp-mo-br100',
-      rating: 4, // Rating value out of 5
-    }
-      */}
-  ];
-
   return (
-    <Box sx={{ backgroundColor: 'white', padding: 5 }}>
-      <Typography variant="h2" align="center" sx={{ paddingBottom: 5, fontWeight:'bold' }}>
-        Vad säger våra kunder om oss?
-      </Typography>
-      <Typography variant="body1" align="center" sx={{ marginBottom: 5 }}>
-        Vi är stolta över förtroendet som vi fått att driva mer trafik och hjälpa företag, stora som små, att synas bättre på nätet.
-      </Typography>
-      <Grid container spacing={4} justifyContent="center">
-        {reviews.map((review) => (
-          <Grid item xs={12} sm={6} md={4} key={review.id} sx={{ paddingBottom: 3 }}>
-            <Card sx={{ display: 'flex', flexDirection: 'column', height: '100%', padding: 2 }}>
-              <CardHeader
-                avatar={<Avatar src={review.image} alt={review.name} />}
-                title={review.name}
-                subheader={review.date}
+    <Box sx={{ padding: '40px', backgroundColor: '#edf5ff' }}>
+      <Box sx={{ textAlign: 'center', marginBottom: '30px' }}>
+        <Typography variant="h2" sx={{ marginBottom: '20px', fontWeight:'bold' }}>
+          Vad säger våra kunder om oss?
+        </Typography>
+        <Typography variant="h5" sx={{ marginBottom: '30px', mx: 'auto', width: '80%', color:'black' }}>
+          Vi är stolta över förtroendet som vi fått att driva mer trafik och hjälpa företag, stora som små, att synas bättre på nätet.
+        </Typography>
+      </Box>
+      <Grid container spacing={4}>
+        {/* Review 1 */}
+        <Grid item xs={12} sm={4}>
+          <Card sx={{ boxShadow: 0 }}>
+            <CardContent>
+              <Box sx={{ display: 'flex', alignItems: 'center' }}>
+                <Avatar
+                  src="https://lh3.googleusercontent.com/a/ACg8ocKIoklxL2mwHaXB0DrfgUSBYDfjAtRxPEqnXCz9QSSCV9Ok7w=w40-h40-c-rp-mo-br100"
+                  alt="Emma"
+                  sx={{ width: 40, height: 40, marginRight: 2 }}
+                />
+                <Box>
+                  <Typography variant="body2">Emma</Typography>
+                  <Typography variant="body2" sx={{ color: 'text.secondary' }}>
+                    January 8, 2025
+                  </Typography>
+                </Box>
+              </Box>
+              <Rating
+                name="read-only"
+                value={5}
+                readOnly
+                sx={{ marginY: 2 }}
               />
-              <CardContent sx={{ flexGrow: 1 }}>
-                <Rating value={review.rating} precision={0.5} readOnly />
-                <Typography variant="body2" sx={{ marginTop: 1 }}>
-                  {review.text}
-                </Typography>
-              </CardContent>
-            </Card>
-          </Grid>
-        ))}
+              <Typography variant="body2">
+                Nicholas i Göteborg var väldigt informativ och tog sin tid till att förstå hur vår verksamhet fungerar. Ser fram emot ett långt och bra samarbete.
+                Super kille verkligen.
+              </Typography>
+            
+            </CardContent>
+          </Card>
+        </Grid>
+
+        {/* Review 2 */}
+        <Grid item xs={12} sm={4}>
+          <Card sx={{ boxShadow: 0 }}>
+            <CardContent>
+              <Box sx={{ display: 'flex', alignItems: 'center' }}>
+                <Avatar
+                  src="https://lh3.googleusercontent.com/a/ACg8ocKvubj5h18yeW9VfkGWlLjo9DMpveEMhUUpkgLk3JKOJu2KtA=w40-h40-c-rp-mo-br100"
+                  alt="Mando Amer"
+                  sx={{ width: 40, height: 40, marginRight: 2 }}
+                />
+                <Box>
+                  <Typography variant="body2">Mando Amer</Typography>
+                  <Typography variant="body2" sx={{ color: 'text.secondary' }}>
+                    December 2, 2024
+                  </Typography>
+                </Box>
+              </Box>
+              <Rating
+                name="read-only"
+                value={5}
+                readOnly
+                sx={{ marginY: 2 }}
+              />
+              <Typography variant="body2">
+                Super nöjd med helheten, snabb hjälp och respons. Särskilt Lara som alltid finns vid hjälp.
+              </Typography>
+         
+            </CardContent>
+          </Card>
+        </Grid>
+
+        {/* Review 3 */}
+        <Grid item xs={12} sm={4}>
+          <Card sx={{ boxShadow: 0 }}>
+            <CardContent>
+              <Box sx={{ display: 'flex', alignItems: 'center' }}>
+                <Avatar
+                  src="https://lh3.googleusercontent.com/a-/ALV-UjWgFMB3Wtz7SW4xQgdpZOqvb7UvTC27u49a7tA4phXigKvf5_-abw=w40-h40-c-rp-mo-br100"
+                  alt="Ghazal Saberian"
+                  sx={{ width: 40, height: 40, marginRight: 2 }}
+                />
+                <Box>
+                  <Typography variant="body2">Ghazal Saberian</Typography>
+                  <Typography variant="body2" sx={{ color: 'text.secondary' }}>
+                    November 29, 2024
+                    </Typography>
+                </Box>
+              </Box>
+              <Rating
+                name="read-only"
+                value={5}
+                readOnly
+                sx={{ marginY: 2 }}
+              />
+              <Typography variant="body2">
+                Smidigt service och trevlig personal. Lara, vår kontaktperson, är professionell och engagerad. Tack vare deras arbete.
+                <br></br>
+              </Typography>
+         
+            </CardContent>
+          </Card>
+        </Grid>
       </Grid>
     </Box>
   );

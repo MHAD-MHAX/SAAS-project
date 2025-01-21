@@ -19,8 +19,11 @@ import LandingPage from "./LandingPage";
 import Act from "./Act";
 import Scan from "./Scan";
 
+
+
 import Logo from "../src/Images/LOGO3.jpeg";
 import Video from "./Images/Vid.mp4";
+import SEO from "./SEO";
 
 function App() {
 
@@ -43,6 +46,8 @@ function App() {
           <Route path="/landing" element={<LandingPage/>} />
           <Route path="/act" element={<Act/>} />
           <Route path="/scan" element={<Scan/>} />
+          <Route path="/seo" element={<SEO/>} />
+
           </Routes>
           </Router>
      

@@ -2,6 +2,9 @@ import React from 'react';
 import { Container, Grid, Button, Typography, Link, Box } from '@mui/material';
 import { Phone, LocalShipping, Inbox, AccountCircle, Facebook, Instagram } from '@mui/icons-material';
 
+
+import Logo from "./Images/LOGO3.jpeg";
+
 const Footer = () => {
   return (
     <footer style={{ backgroundColor: '#111', borderColor: '#111' }}>
@@ -208,7 +211,7 @@ const Footer = () => {
             <Grid container spacing={2}>
               <Grid item xs={6}>
                 <Box>
-                  <img src="https://cda.actlocal.se/assets/actlocal_blue.png" width="40" alt="Act Local Logo" />
+                  <img src={Logo} width="40" alt="Act Local Logo" />
                 </Box>
               </Grid>
               <Grid item xs={6}>

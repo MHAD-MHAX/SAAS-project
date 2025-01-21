@@ -17,17 +17,28 @@ const LandingPage = () => {
         backgroundColor:'#fafafa'
     }}>
       <main>
-      <Box sx={{ padding: '64px 0', position: 'relative'}}>
+    
+      <Box sx={{ padding: 'px 0', position: 'relative' }}>
       <Box
         sx={{
-          height: '750px',
+          height: '150vh',
           backgroundImage: 'url("https://cda.actlocal.se/assets/Depositphotos_106262598_l-2015.jpg")',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           position: 'relative',
         }}
       >
-        <Box sx={{ position: 'absolute', top: '40%', left:'40%',transform: 'translate(-50%, -50%)', color: 'white' }}>
+        <Box
+          sx={{
+            position: 'absolute',
+            top: '52%',
+            left: '50%',
+            transform: 'translateX(-50%) translateY(-50%)',
+            color: 'white',
+            textAlign: 'center',
+            maxWidth: '90%',
+          }}
+        >
           <Grid container spacing={2} justifyContent="center">
             <Grid item xs={12} sm={6}>
               <Typography variant="h3" gutterBottom>
@@ -37,7 +48,7 @@ const LandingPage = () => {
                   <span style={{ fontSize: '3.5rem', fontWeight: 'bold' }}>Landingssajt</span>
                 </Typography>
               </Typography>
-              <Typography variant="h5" sx={{ maxWidth: '450px' }}>
+              <Typography variant="h5" sx={{ maxWidth: '450px', margin: '0 auto' }}>
                 Fördelar med landingssajter
               </Typography>
               <Box sx={{ mt: 3 }}>
@@ -62,21 +73,42 @@ const LandingPage = () => {
 
             {/* The second grid item with a larger width */}
             <Grid item xs={12} sm={6}>
-              <Box sx={{ backgroundColor: 'white', padding: '24px', borderRadius: '8px', boxShadow: 3, color: 'black', width: '500px' }}>
+              <Box
+                sx={{
+                  backgroundColor: 'white',
+                  padding: '24px',
+                  borderRadius: '8px',
+                  boxShadow: 3,
+                  color: 'black',
+                  width: '100%',
+                  maxWidth: '500px',
+                  margin: '0 auto',
+                }}
+              >
                 <Typography variant="h5" gutterBottom sx={{ fontSize: '2.0em', fontWeight: 'bold' }}>
                   Varför en landningssajt?
                 </Typography>
                 <Typography variant="body1">
-                  Har du kört fast med din befintliga hemsida eller vill nå<br />
-                  topplaceringarna på Google i ett hårt konkurrensutsatt område <br />
-                  eller nisch? Då kan en SEO-optimerad landningssajt vara det som<br />
-                  behövs.<br />
+                  Har du kört fast med din befintliga hemsida eller vill nå
                   <br />
-                  Kortfattat beskrivet så är en landningssajt en extern och egen<br />
-                  hemsida som vi sätter upp med fokus på en enda sak, att ranka <br />
-                  så högt upp som möjligt på Google på ett specifikt sökord. <br />
-                  Därefter vill vi självklart att besökarna ska konvertera till ett köp<br />
-                  när de väl surfar in på sajten men där är vi inne på nästa steg!<br />
+                  topplaceringarna på Google i ett hårt konkurrensutsatt område
+                  <br />
+                  eller nisch? Då kan en SEO-optimerad landningssajt vara det som
+                  <br />
+                  behövs.
+                  <br />
+                  <br />
+                  Kortfattat beskrivet så är en landningssajt en extern och egen
+                  <br />
+                  hemsida som vi sätter upp med fokus på en enda sak, att ranka
+                  <br />
+                  så högt upp som möjligt på Google på ett specifikt sökord.
+                  <br />
+                  Därefter vill vi självklart att besökarna ska konvertera till ett
+                  köp
+                  <br />
+                  när de väl surfar in på sajten men där är vi inne på nästa steg!
+                  <br />
                 </Typography>
               </Box>
             </Grid>
@@ -85,7 +117,8 @@ const LandingPage = () => {
       </Box>
     </Box>
 
-        <Box sx={{ backgroundColor: 'rgb(237, 245, 255)', paddingBottom: '85px', color:'black'}}>
+    
+        <Box sx={{ backgroundColor: 'rgb(237, 245, 255)', paddingBottom: '85px', color:'black',}}>
           <Grid container spacing={2} justifyContent="center" sx={{ padding: '20px' }}>
           <Grid item xs={12} sm={6}>
               <img

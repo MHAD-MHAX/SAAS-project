@@ -1,5 +1,7 @@
 import React from 'react';
 import { Box, Button, Typography, Grid, Card, CardMedia, CardContent } from '@mui/material';
+import Amsterdam from "./Images/Amsterdam.jpg";
+import Barber from "./Images/Barber.jpg";
 
 const OurJourney = () => {
   return (
@@ -22,7 +24,7 @@ const OurJourney = () => {
               sx={{
                 position: 'relative',
                 height: 400,
-                backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://cda.actlocal.se/assets/successstories/artholmsgarden.jpg")',
+                backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${Amsterdam})` , 
                 backgroundPosition: 'center',
                 backgroundSize: 'cover',
               }}
@@ -61,7 +63,7 @@ const OurJourney = () => {
               sx={{
                 position: 'relative',
                 height: 400,
-                backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://cda.actlocal.se/assets/actlocal_blue.png")',
+                backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${Barber})`,
                 backgroundPosition: 'center',
                 backgroundSize: 'cover',
               }}

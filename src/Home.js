@@ -12,6 +12,8 @@ import CustomerFocusSection from "./CustomerFocus";
 import DigitalEcosystem from "./Digital";
 import CustomerReviews from "./CustomerReviews";
 import ContactForm from "./ContactForm";
+
+import SEO from './SEO';
 import Footer from "./Footer";
 import Act from './Act';
 
@@ -26,7 +28,7 @@ const Home = () => {
     <Box
       sx={{
         paddingTop: '64px',
-        paddingBottom: '32px',
+        paddingBottom: 'px',
       }}
     >
       {/* Video Header */}

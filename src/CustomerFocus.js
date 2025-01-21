@@ -2,6 +2,9 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+
+import Googlevid from "./Images/Googlevid.mp4"
+
 const CustomerFocusSection = () => {
   useEffect(() => {
     AOS.init({
@@ -52,12 +55,13 @@ const CustomerFocusSection = () => {
             color: "#555",
             lineHeight: "1.6",
             fontWeight: "bold",
-            textAlign:"left"
+           
           }}
         >
-         Med hjälp av vårat direktkopplade API kan du interagera <br></br>
-         med dina kunder genom att läsa alla recensioner och <br></br>
-         omdömen ifrån bl.a. Facebook & Google.
+         Med hjälp av vårat direktkopplade API kan <br></br>
+         du interagera med dina kunder genom att  <br></br>
+         läsa alla recensioner och <br></br>
+         omdömen ifrån bl.a. Facebook & Google. <br></br>
         </p>
         <br />
         <button
@@ -96,8 +100,7 @@ const CustomerFocusSection = () => {
           loop
         >
           <source
-            src="https://cda.actlocal.se/assets/videos/Actlocal-2-s.mp4"
-            type="video/mp4"
+            src={Googlevid}            type="video/mp4"
           />
           Your browser does not support the video tag.
         </video>

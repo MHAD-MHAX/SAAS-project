@@ -53,14 +53,15 @@ const CustomerFocusSection = () => {
             color: "#555",
             lineHeight: "1.6",
             fontWeight: "bold",
-            textAlign:"left"
+            
           
           }}
         >
-          Vi hjälper dig som lokalt företag att lista din verksamhet <br />
-          på alla viktiga digitala plattformar. Syns du inte så finns <br />
-          du inte brukar man säga, i detta sammanhang så stämmer det <br />
-          faktiskt!<br />
+          Vi hjälper dig som lokalt företag att lista <br />
+          din verksamhet på alla viktiga digitala <br />
+          plattformar. Syns du inte så finns du <br />
+          inte brukar man säga, i detta sammanhang<br />
+          så stämmer det faktiskt!<br />
         </p>
         <br />
         <button

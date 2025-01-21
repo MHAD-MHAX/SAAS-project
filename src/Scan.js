@@ -6,6 +6,9 @@ import {
   Typography,
   Grid,
   Avatar,
+  List,
+  ListItem,
+  ListItemText,
   Button,
   TextField,
 } from "@mui/material";
@@ -17,25 +20,24 @@ const Scan = () => {
   return (
     <>
     <Navbar/>
-    <main>
-      <Box
+    <Box
         sx={{
-          padding: "px 0px 0px",
+        
         }}
       >
         <Box
           sx={{
             background: "black",
-            height: "100vh",
+            height: "140vh",
             color: "white",
           }}
         >
           <Container sx={{ py: 0,  textAlign:'left'}}>
             <Grid container sx={{ minHeight: "100vh" }}>
               {/* Left Content */}
-              <Grid item xs={12} md={6} sx={{ p: { xs: 0, md: 4 }, display: "flex", alignItems: "center", }}>
+              <Grid item xs={12} md={6} sx={{ p: { xs: 0, md: 4 }, display: "flex", }}>
                 <Box>
-                  <Typography variant="h2" sx={{ mb: 3, color: "white", fontWeight:'bold' }}>
+                  <Typography variant="h2" sx={{ mt: 10, color: "white", fontWeight:'bold',   }}>
                     Skanna ditt företag
                   </Typography>
                   <Box>
@@ -68,6 +70,8 @@ const Scan = () => {
                 </Box>
               </Grid>
 
+
+
               {/* Right Content */}
               <Grid
                 item
@@ -89,9 +93,8 @@ const Scan = () => {
                 />
                 <Box
                   sx={{
-                    position: "relative",
-                    zIndex: 1,
-                    p: 5,
+                    position: "",
+                    paddingLeft:'8px',
                     bgcolor: "white",
                     borderRadius: 1,
                   }}
@@ -147,105 +150,126 @@ const Scan = () => {
                       SKANNA NU
                     </Button>
                     </form>
+                    
                 </Box>
+                <br></br>
+<br></br>
+<br></br>
               </Grid>
             </Grid>
           </Container>
         </Box>
       </Box>
 
-      <Box sx={{ backgroundColor: '#f5f5f5', padding: '2rem 0', color:'black' }}>
-      <Box sx={{ maxWidth: '1200px', margin: '0 auto' }}>
-        {/* Section 1 */}
-        <Grid container spacing={2} direction={{ xs: 'column', md: 'row-reverse' }} alignItems="center">
-          <Grid item xs={12} md={6}>
+
+
+
+<Box sx={{paddingTop:'50px'}}>
+
+<Box
+      sx={{
+        backgroundColor: '#edf5ff',
+        position: 'relative',
+        paddingBottom: '15px',
+        color:'black'
+      }}
+    >
+      <Container>
+        {/* First Section */}
+        <Grid container spacing={2} sx={{ flexDirection: { xs: 'column', md: 'row-reverse' } }}>
+          <Grid item xs={12} md={6} sx={{ height: '100%', width: '100%' }}>
             <Box
               sx={{
-                position: 'relative',
-                paddingBottom: '74.93%',
-                backgroundImage: 'url("https://cda.actlocal.se/assets/UB-29047-6.png")',
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
+                height: '100%',
                 width: '100%',
-                height: '0',
+                backgroundImage: 'url("https://cda.actlocal.se/assets/UB-29047-6.png")',
+                backgroundPosition: 'center center',
+                backgroundSize: 'cover',
+                paddingBottom: '74.9268%',
               }}
             />
           </Grid>
           <Grid item xs={12} md={6}>
-            <Typography variant="h2" gutterBottom sx={{ fontSize: '2.2rem', marginBottom: '1.5rem', fontWeight:'bold' }}>
-              Rätt information om ert<br></br> 
-              företag på alla plattformar
+            <Typography variant="h2" sx={{ marginBottom: 5, fontSize: { xs: '2rem', md: '3rem' } }}>
+              Rätt information om ert företag på alla plattformar
             </Typography>
-            <Typography paragraph>
+            <Typography variant="body1" sx={{ marginBottom: 3 }}>
               Har du också råkat ut för att du sökt upp ett företag och öppettiderna eller telefonnumret har visat sig vara fel? Det har vi också. Det är oftast bättre att inte synas alls än att synas med felaktig information, då det skapar en stor badwill för er verksamhet.
             </Typography>
-            <Typography paragraph>
+            <Typography variant="body1">
               Genom att du värnar om ditt företag och ser till att du syns med rätt och konsekvent information på trovärdiga plattformar så anses du som ett mer trovärdigt företag och Google känner sig mer bekväma med att visa upp just ditt företag oftare och högre upp i sökresultatet.
             </Typography>
           </Grid>
         </Grid>
 
-        {/* Section 2 */}
-        <Grid container spacing={2} direction={{ xs: 'column-reverse', md: 'row' }} alignItems="center" sx={{ marginTop: '3rem' }}>
-          <Grid item xs={12} md={6}>
+        <br></br>
+        <br></br>
+        <br></br>
+        {/* Second Section */}
+        <Grid container spacing={2} sx={{ flexDirection: { xs: 'column-reverse', md: 'row' } }}>
+          <Grid item xs={12} md={6} sx={{ height: '100%', width: '100%' }}>
             <Box
               sx={{
-                position: 'relative',
-                paddingBottom: '75%',
-                backgroundImage: 'url("https://cda.actlocal.se/assets/UB-29047-5.png")',
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
+                height: '100%',
                 width: '100%',
-                height: '0',
+                backgroundImage: 'url("https://cda.actlocal.se/assets/UB-29047-5.png")',
+                backgroundPosition: 'center center',
+                backgroundSize: 'cover',
+                paddingBottom: '75%',
               }}
             />
           </Grid>
           <Grid item xs={12} md={6}>
-            <Typography variant="h2" gutterBottom sx={{ fontSize: '2.2rem', marginBottom: '1.5rem', fontWeight:'bold' }}>
+            <Typography variant="h2" sx={{ marginBottom: 5, fontSize: { xs: '2rem', md: '3rem' } }}>
               Automatisera er digitala närvaro
             </Typography>
-            <Typography paragraph>
+            <Typography variant="body1" sx={{ marginBottom: 3 }}>
               Genom att vi samlat dessa trovärdiga plattformar i ett och samma system med API-lösningar så har vi förenklat och automatiserat hanteringen av att se till att din företagsinformation är korrekt och konsekvent på alla dessa plattformar. Ändra på ett ställe och det synkas på alla ställen, helt automatiskt.
             </Typography>
-            <Typography paragraph>
-              Du kan även i vårt system enkelt besvarar recensioner och posta inlägg/erbjudanden direkt på bl.a. Google, Facebook, Trustpilot och en mängd andra plattformar.
+            <Typography variant="body1">
+              Du kan även i vårt system enkelt besvara recensioner och posta inlägg/erbjudanden direkt på bl.a. Google, Facebook, Trustpilot och en mängd andra plattformar.
             </Typography>
           </Grid>
         </Grid>
 
-        {/* Section 3 */}
-        <Grid container spacing={2} direction={{ xs: 'column', md: 'row' }} alignItems="center" sx={{ marginTop: '3rem' }}>
-          <Grid item xs={12} md={6}>
+        <br></br>
+        <br></br>
+        <br></br>
+
+        {/* Third Section */}
+        <Grid container spacing={2} sx={{ flexDirection: { xs: 'column', md: 'row-reverse' } }}>
+          <Grid item xs={12} md={6} sx={{ height: '100%', width: '100%' }}>
             <Box
               sx={{
-                position: 'relative',
-                paddingBottom: '72.77%',
-                backgroundImage: 'url("https://cda.actlocal.se/assets/landingpage-icon-first.svg")',
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
+                height: '100%',
                 width: '100%',
-                height: '0',
+                backgroundImage: 'url("https://cda.actlocal.se/assets/landingpage-icon-first.svg")',
+                backgroundPosition: 'center center',
+                backgroundSize: 'cover',
+                paddingBottom: '72.7672%',
               }}
             />
           </Grid>
           <Grid item xs={12} md={6}>
-            <Typography variant="h2" gutterBottom sx={{ fontSize: '2.2rem', marginBottom: '1.5rem', fontWeight:'bold'}}>
-              Fler kunder till er verksamhet via Google varje månad
+            <Typography variant="h2" sx={{ marginBottom: 5, fontSize: { xs: '2rem', md: '3rem' } }}>
+            Fler kunder till er verksamhet via Google varje månad
             </Typography>
-            <Typography paragraph>
-            Genom att vi samlat dessa trovärdiga plattformar i ett och samma system med API-lösningar så har vi förenklat och automatiserat hanteringen av att se till att din företagsinformation är korrekt och konsekvent på alla dessa plattformar. Ändra på ett ställe och det synkas på alla ställen, helt automatiskt.
+            <Typography variant="body1" sx={{ marginBottom: 3 }}>
+              Genom att vi samlat dessa trovärdiga plattformar i ett och samma system med API-lösningar så har vi förenklat och automatiserat hanteringen av att se till att din företagsinformation är korrekt och konsekvent på alla dessa plattformar. Ändra på ett ställe och det synkas på alla ställen, helt automatiskt.
             </Typography>
-            <Typography paragraph>
-              Du kan även i vårt system enkelt besvarar recensioner och posta inlägg/erbjudanden direkt på bl.a. Google, Facebook, Trustpilot och en mängd andra plattformar.
+            <Typography variant="body1">
+              Du kan även i vårt system enkelt besvara recensioner och posta inlägg/erbjudanden direkt på bl.a. Google, Facebook, Trustpilot och en mängd andra plattformar.
             </Typography>
           </Grid>
         </Grid>
-      </Box>
+      </Container>
     </Box>
+  
 
 
 <Footer/>
-    </main>
+</Box>
+    
     </>
   );
 };

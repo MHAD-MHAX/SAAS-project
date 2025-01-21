@@ -20,9 +20,13 @@ import { Menu as MenuIcon, Phone, Person, ExpandMore,} from '@mui/icons-material
 
 import Vid from "./Images/Vid.mp4";
 
+import Logo from "./Images/LOGO3.jpeg";
+
 const Navbar = () => {
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [anchorEl, setAnchorEl] = useState(null);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+
 
   const toggleDrawer = (open) => {
     setDrawerOpen(open);
@@ -36,40 +40,61 @@ const Navbar = () => {
     setAnchorEl(null);
   };
 
+
   return (
     <div>
       {/* Navigation Drawer (Mobile Menu) */}
       <Drawer
-        open={drawerOpen}
-        onClose={() => toggleDrawer(false)}
-        sx={{
+      open={drawerOpen}
+      onClose={() => toggleDrawer(false)}
+      sx={{
+        width: 350,
+        flexShrink: 0,
+        '& .MuiDrawer-paper': {
           width: 350,
-          flexShrink: 0,
-          '& .MuiDrawer-paper': {
-            width: 350,
-            backgroundColor: 'dark',
-            color: 'white',
-          },
-        }}
-        variant="temporary"
-        anchor="left"
-      >
+          backgroundColor: 'black',
+          color: 'white',
+          
+
+        },
+      }}
+      variant="temporary"
+      anchor="left"
+    >
+      <List>
+        <ListItem button component="a" href="/">
+          <ListItemText style={{ textDecoration:'none', color:'white'}} primary="Hem" />
+        </ListItem>
+
+        <ListItem button component="a" href="/about">
+          <ListItemText  style={{ textDecoration:'none', color:'white'}} primary="Om oss" />
+        </ListItem>
+        
+        <ListItem button component="a" href="/contact">
+          <ListItemText   style={{ textDecoration:'none', color:'white'}}primary="Kontakta oss" />
+        </ListItem>
+
+        {/* Dropdown Section (simplified) */}
+        <ListItem button>
+          <ListItemText  style={{  color:'blue'}} primary="Tjänster" />
+        </ListItem>
         <List>
-          <ListItem button component="a" href="/">
-            <ListItemText primary="Hem" />
+          <ListItem button component="a" href="/act">
+            <ListItemText  style={{ textDecoration:'none', color:'white'}} primary="Act+" />
           </ListItem>
-          <ListItem button component="a" href="/about">
-            <ListItemText primary="Om oss" />
+          <ListItem button component="a" href="/scan">
+            <ListItemText   style={{ textDecoration:'none', color:'white'}}primary="Synlighetsanalys" />
           </ListItem>
-          <ListItem button component="a" href="/contact">
-            <ListItemText primary="Kontakta oss" />
+          <ListItem button component="a" href="/seo">
+            <ListItemText   style={{ textDecoration:'none', color:'white'}}primary="SEO – Sökmotoroptimering" />
           </ListItem>
-          <ListItem button>
-            <ListItemText primary="Tjänster" />
+          <ListItem button component="a" href="/landing">
+            <ListItemText  style={{ textDecoration:'none', color:'white'}}primary="Landningssidor" />
           </ListItem>
         </List>
-        <Divider />
-      </Drawer>
+      </List>
+      <Divider />
+    </Drawer>
 
       {/* AppBar (Header) */}
       <AppBar
@@ -99,7 +124,7 @@ const Navbar = () => {
           <Box sx={{ display: 'flex', alignItems: 'center' }}>
             <a href="/" aria-current="page">
               <img
-                src="https://cda.actlocal.se/assets/actlocal_blue.png"
+                src={Logo}
                 alt="Logo"
                 width="40"
                 className="none_scrolled_logo"
@@ -134,36 +159,44 @@ const Navbar = () => {
     <Grid container spacing={2} sx={{ padding: 1 }}>
     <Grid item xs={6}>
   <MenuItem onClick={handleMenuClose}>
+  <a style={{ textDecoration:'none', color:'inherit'}} href="/act">
     <Box sx={{ display: 'flex', flexDirection: 'column' }}>
-      <Typography variant="subtitle1" sx={{ fontWeight: 'bold' }}><a style={{ textDecoration:'none', color:'inherit'}} href="/act">Act+</a></Typography>
+      <Typography variant="subtitle1" sx={{ fontWeight: 'bold' }}>Act+</Typography>
       <Typography variant="body2">Nå dina lokala besökare på rätt sätt.</Typography>
     </Box>
+    </a>
   </MenuItem>
 </Grid>
 
 <Grid item xs={6}>
         <MenuItem onClick={handleMenuClose}>
+        <a  style={{ textDecoration:'none', color:'inherit'}} href="/scan">
         <Box sx={{ display: 'flex', flexDirection: 'column' }}>
-          <Typography variant="subtitle1" sx={{ fontWeight: 'bold' }}><a style={{ textDecoration:'none', color:'inherit'}} href="/scan">Synlighetsanalys</a></Typography>
+          <Typography variant="subtitle1" sx={{ fontWeight: 'bold' }}>Synlighetsanalys</Typography>
           <Typography variant="body2">Kolla om du är synlig överallt på nätet.</Typography>
         </Box>
+        </a>
         </MenuItem>
       </Grid>
       <Grid item xs={6}>
         <MenuItem onClick={handleMenuClose}>
+        <a style={{ textDecoration:'none', color:'inherit'}} href="/seo">
         <Box sx={{ display: 'flex', flexDirection: 'column' }}>
           <Typography variant="subtitle1" sx={{ fontWeight: 'bold' }}>SEO – Sökmotoroptimering</Typography>
           <Typography variant="body2">Vi hjälper ditt företag att toppa sökresultaten på Google.</Typography>
         </Box>
+        </a>
         </MenuItem>
       </Grid>
    
       <Grid item xs={6}>
         <MenuItem onClick={handleMenuClose}>
+        <a style={{ textDecoration:'none', color:'inherit'}} href="/landing">
         <Box sx={{ display: 'flex', flexDirection: 'column' }}>
-          <Typography variant="subtitle1" sx={{ fontWeight: 'bold' }}><a style={{ textDecoration:'none', color:'inherit'}} href="/landing">Landningssidor</a></Typography>
+          <Typography variant="subtitle1" sx={{ fontWeight: 'bold' }}>Landningssidor</Typography>
           <Typography variant="body2">Effektiva och konverteringsoptimerade landningssidor.</Typography>
        </Box>
+       </a>
         </MenuItem>
       </Grid>
     </Grid>
@@ -197,7 +230,7 @@ const Navbar = () => {
               010 173 40 10
             </Button>
             <Button
-              href="https://local.actlocal.se"
+              href="/"
               sx={{
                 color: 'white',
                 backgroundColor: 'primary.main',
