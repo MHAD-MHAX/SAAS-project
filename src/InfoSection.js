@@ -48,7 +48,7 @@ const ActPlus = () => {
         </div>
         <div className="step-card highlight" data-aos="zoom-in">
           <span className="icon"><img src={Check}/></span>
-          <p>Nu kan både sökmotorerna och alla nya kunder hitta er!</p>
+          <p style={{ color:'white'}}>Nu kan både sökmotorerna och alla nya kunder hitta er!</p>
         </div>
       </div>
     </section>

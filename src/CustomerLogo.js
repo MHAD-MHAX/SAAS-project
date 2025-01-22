@@ -36,7 +36,7 @@ const CustomersSection = () => {
   ];
 
   return (
-    <Box sx={{ marginTop: 10, marginBottom: 10 }}>
+    <Box sx={{ marginTop: 15, marginBottom: 10 }}>
       <Typography variant="h2" align="center" gutterBottom sx={{fontWeight:'bold'}}>
         Ett urval av våra kunder
       </Typography>

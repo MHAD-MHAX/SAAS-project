@@ -69,7 +69,8 @@ const AboutUs = () => {
   flexDirection: 'column', // Stack content vertically
   paddingLeft:'20px',
   justifyContent: 'center', // Center content vertically (if needed)
-  textAlign:'left'
+  textAlign:'left',
+  paddingTop:'30px'
  
 }}>
   <Typography variant="h5" sx={{ fontWeight: 'bold', fontSize: '2.0em', textAlign:'left'}}>

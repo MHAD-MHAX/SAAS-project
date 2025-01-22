@@ -203,16 +203,25 @@ const Navbar = () => {
             </Button>
           </Box>
 
-          <Box sx={{ display: 'flex', alignItems: 'center', paddingLeft:'170px'}}>
-
-<a href="/" aria-current="page">
-  <img
-    src={Logo}
-    alt="Logo"
-    width="40"
-    className="none_scrolled_logo"
-  />
-</a>
+          <Box
+  sx={{
+    display: 'flex',
+    justifyContent: 'center', // Centers horizontally
+    alignItems: 'center',     // Centers vertically
+    position: 'absolute',     // Positions the logo independently
+    left: '50%',              // Move it to the center horizontally
+    transform: 'translateX(-50%)', // Adjust for proper centering
+    height: '100%',           // Matches navbar height for proper alignment
+  }}
+>
+  <a href="/" aria-current="page">
+    <img
+      src={Logo}
+      alt="Logo"
+      width="40"
+      className="none_scrolled_logo"
+    />
+  </a>
 </Box>
 
           {/* Spacer */}

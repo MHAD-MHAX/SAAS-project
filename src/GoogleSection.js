@@ -118,7 +118,9 @@ const CustomerFocusSection = () => {
         </video>
         
       </div>
-<br></br>
+      <br></br>
+      <br></br>
+      <br></br>
 <br></br>
 <CustomerLogo/>
     </div>
