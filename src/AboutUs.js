@@ -5,7 +5,7 @@ import PhoneIcon from '@mui/icons-material/Phone';
 import UserIcon from '@mui/icons-material/AccountCircle';
 import VideoPlayer from 'react-player'; // Optional, for embedding video
 
-import Vid from "./Images/Vid.mp4";
+import Vid from "./Images/Aboutvid.mp4";
 
 import Navbar from './Navbar';
 import Footer from './Footer';
