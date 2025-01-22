@@ -116,7 +116,7 @@ const OurJourney = () => {
                   textAlign: 'center',
                 }}
               >
-                Best Barber
+                Elite Barbers NYC 
               </Typography>
               {/* Button */}
               <Button
