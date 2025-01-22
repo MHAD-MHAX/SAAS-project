@@ -18,7 +18,7 @@ import Footer from './Footer';
 import PersonIcon from '@mui/icons-material/Person';
 import { styled } from '@mui/system';
 
-import Image from "./Images/Image.jpg"
+import Image from "./Images/Image2.jpg"
 
 // Define the URLs explicitly
 const heroImageUrl = "https://cda.actlocal.se/assets/Depositphotos_106262598_l-2015.jpg";
