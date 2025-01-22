@@ -64,7 +64,7 @@ const OurJourney = () => {
               </Typography>
               {/* Button */}
               <Button
-                href="/kunder/aertholmsgarden"
+                href="/spa"
                 variant="contained"
                 sx={{
                   position: 'absolute',
@@ -120,7 +120,7 @@ const OurJourney = () => {
               </Typography>
               {/* Button */}
               <Button
-                href="/kunder/yogapalatset"
+                href="/barber"
                 variant="contained"
                 sx={{
                   position: 'absolute',

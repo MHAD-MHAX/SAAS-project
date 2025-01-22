@@ -18,13 +18,15 @@ import Footer from './Footer';
 import PersonIcon from '@mui/icons-material/Person';
 import { styled } from '@mui/system';
 
+import Image from "./Images/Image.jpg"
+
 // Define the URLs explicitly
 const heroImageUrl = "https://cda.actlocal.se/assets/Depositphotos_106262598_l-2015.jpg";
 const contactImageUrl =
   "https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80";
 
 const HeroImage = styled('div')(({ theme }) => ({
-  backgroundImage: `url(${heroImageUrl})`,
+  backgroundImage: `url(${Image})`,
   backgroundSize: 'cover',
   backgroundPosition: 'center',
   height: '650px',

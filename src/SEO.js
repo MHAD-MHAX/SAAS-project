@@ -22,6 +22,8 @@ import Footer from "./Footer";
 
 import Navbar from "./Navbar";
 
+import Image from "./Images/Image2.jpg"
+
 const SEO = () => {
   const [drawerOpen, setDrawerOpen] = React.useState(false);
 
@@ -82,8 +84,7 @@ const SEO = () => {
       {/* Hero Section */}
       <Box
         sx={{
-          backgroundImage:
-            "url('https://cda.actlocal.se/assets/Depositphotos_106262598_l-2015.jpg')",
+            backgroundImage: `url(${Image})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           height: "470px",

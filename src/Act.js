@@ -13,6 +13,7 @@ import {
 
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import Image from "./Images/Image2.jpg"
 
 const Act = () => {
   return (
@@ -22,8 +23,7 @@ const Act = () => {
       {/* Hero Section */}
       <Box
         sx={{
-          backgroundImage:
-            "url('https://cda.actlocal.se/assets/Depositphotos_103761392_l-2015.jpg')",
+            backgroundImage: `url(${Image})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           height: "620px",

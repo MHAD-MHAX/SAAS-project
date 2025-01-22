@@ -18,6 +18,8 @@ import LandingPage from "./LandingPage";
 
 import Act from "./Act";
 import Scan from "./Scan";
+import Barber from "./Barber";
+import Spa from "./Spa";
 
 
 
@@ -47,7 +49,8 @@ function App() {
           <Route path="/act" element={<Act/>} />
           <Route path="/scan" element={<Scan/>} />
           <Route path="/seo" element={<SEO/>} />
-
+          <Route path="/barber" element={<Barber/>} />
+          <Route path="/spa" element={<Spa/>} />
           </Routes>
           </Router>
      

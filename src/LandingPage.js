@@ -6,6 +6,7 @@ import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import CheckIcon from '@mui/icons-material/Check';
 
 import ContactForm from './ContactForm';
+import Image from "./Images/Image2.jpg";
 
 import Navbar from './Navbar';
 import Footer from './Footer';
@@ -22,7 +23,7 @@ const LandingPage = () => {
       sx={{
         position: "relative",
         height: "1000px",
-        backgroundImage: "url('https://cda.actlocal.se/assets/Depositphotos_106262598_l-2015.jpg')",
+         backgroundImage: `url(${Image})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         display: "flex",

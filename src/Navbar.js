@@ -50,6 +50,7 @@ const Navbar = () => {
       sx={{
         width: 350,
         flexShrink: 0,
+      
         '& .MuiDrawer-paper': {
           width: 350,
           backgroundColor: 'black',
@@ -106,14 +107,14 @@ const Navbar = () => {
           left: 0,
           right: 0,
           borderColor: 'white',
-          backgroundColor:'black'
+          backgroundColor:'white'
         }}
       >
         <Toolbar sx={{ display: 'flex', justifyContent: 'space-between', height: '64px' }}>
           {/* Mobile menu button */}
           <IconButton
             edge="start"
-            color="inherit"
+            color="black"
             aria-label="menu"
             onClick={() => toggleDrawer(true)}
             sx={{ display: { xs: 'block', md: 'none' } }}
@@ -125,10 +126,10 @@ const Navbar = () => {
 
 
           {/* Desktop navigation links */}
-          <Box sx={{ display: { xs: 'none', md: 'flex' }, alignItems: 'center' }}>
+          <Box sx={{ display: { xs: 'none', md: 'flex' }, alignItems: 'center', gap:'30px' }}>
             {/* Tjänster Dropdown */}
             <Button
-              sx={{ color: 'White', textTransform: 'none' }}
+              sx={{ color: 'black', textTransform: 'none' }}
               aria-controls="tjanster-menu"
               aria-haspopup="true"
               onClick={handleMenuOpen}
@@ -195,10 +196,10 @@ const Navbar = () => {
   </Menu>
 
 
-            <Button sx={{ color: 'White', textTransform: 'none' }} href="/about">
+            <Button sx={{ color: 'black', textTransform: 'none' }} href="/about">
               Om oss
             </Button>
-            <Button sx={{ color: 'White', textTransform: 'none' }} href="/contact">
+            <Button sx={{ color: 'black', textTransform: 'none' }} href="/contact">
               Kontakta oss
             </Button>
           </Box>
@@ -262,7 +263,7 @@ const Navbar = () => {
           {/* Mobile login button */}
           <IconButton
             sx={{ display: { xs: 'block', md: 'none' }, padding: 0 }}
-            href="https://local.actlocal.se"
+            href="/"
           >
             <Person sx={{ fontSize: '36px' }} />
           </IconButton>

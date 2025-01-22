@@ -16,6 +16,7 @@ import ContactForm from "./ContactForm";
 import SEO from './SEO';
 import Footer from "./Footer";
 import Act from './Act';
+import Barber from "./Barber";
 
 import Scan from './Scan';
 
@@ -102,6 +103,7 @@ const Home = () => {
     </Box>
     <InfoSection/>
       <DigitalEcosystem />
+      
       <CustomerFocusSection />
       <GoogleSection />
       <CustomerReviews />
