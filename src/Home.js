@@ -41,7 +41,7 @@ const Home = () => {
           width: '100%',
         }}
       >
-        <video autoPlay muted loop style={{ objectFit: 'cover', width: '100%', height: '100%' }}>
+        <video autoPlay muted loop playsInline style={{ objectFit: 'cover', width: '100%', height: '100%' }}>
           <source src={Vid} type="video/mp4" />
           Your browser does not support HTML5 video.
         </video>
