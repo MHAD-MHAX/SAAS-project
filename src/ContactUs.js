@@ -63,7 +63,7 @@ const ContactUs = () => {
     sx={{
       // Align text inside the container to the left
       MaxWidth: '300px', // Restrict the container width
-      marginLeft: '50px', // Add some space from the left edge of the image
+      marginLeft: '0px', // Add some space from the left edge of the image
        // Optional: background for readability
       padding: '20px', // Add padding for better spacing
       borderRadius: '8px', // Optional: rounded corners
