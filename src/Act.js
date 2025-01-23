@@ -79,7 +79,7 @@ const Act = () => {
       </Box>
 
       {/* Content Section */}
-      <Box py={8} sx={{backgroundColor:'#dadcd7', color:'black'}}>
+      <Box py={8}  bgcolor="grey.100" sx={{ color:'black'}}>
         <Container>
           <Grid container spacing={4} alignItems="center">
             <Grid item xs={12} md={6}>
@@ -121,7 +121,7 @@ const Act = () => {
       </Box>
 
       {/* More Sections */}
-      <Box py={8} sx={{backgroundColor:'#dadcd7', color:'black'}}>
+      <Box py={8} bgcolor="grey.100" sx={{ color:'black'}}>
         <Container>
           <Grid container spacing={4} alignItems="center">
             <Grid item xs={12} md={6}>
@@ -159,7 +159,7 @@ const Act = () => {
 
 
            {/* More Sections */}
-           <Box py={8} sx={{backgroundColor:'#dadcd7', color:'black'}}>
+           <Box py={8} bgcolor="grey.100" sx={{ color:'black'}}>
         <Container>
           <Grid container spacing={4} alignItems="center">
             <Grid item xs={12} md={6}>

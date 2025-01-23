@@ -47,26 +47,7 @@ const Barber = () => {
       >
         <Container>
           {/* Buttons */}
-          <Grid container spacing={2} sx={{ mb: 5, mt: -16 }}>
-            {['Utmaning', 'Lösning', 'Resultat'].map((label) => (
-              <Grid item xs={12} md={4} key={label}>
-                <Button
-                  variant="contained"
-                  sx={{
-                    height: '100%',
-                    width: '100%',
-                    padding: '20px',
-                    textAlign: 'center',
-                    borderRadius: '4px',
-                    backgroundColor: '#fff',
-                     color:'black'
-                  }}
-                >
-                  <Typography variant="h5">{label}</Typography>
-                </Button>
-              </Grid>
-            ))}
-          </Grid>
+      
 
           {/* Content Sections */}
           {[
