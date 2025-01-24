@@ -11,7 +11,7 @@ const Footer = () => {
       <Container>
         {/* Contact and Links Section */}
         <Grid container spacing={2}>
-          <Grid item md={3} xs={12}>
+          <Grid item md={6} xs={12}>
             <Button
               component={Link}
               href="/kontakt"
@@ -41,36 +41,7 @@ const Footer = () => {
               </Box>
             </Button>
           </Grid>
-          <Grid item md={3} xs={12}>
-            <Button
-              component={Link}
-              href="/artiklar"
-              variant="contained"
-              fullWidth
-              sx={{ height: '80px', backgroundColor: 'rgba(255,255,255,.02)', borderColor: 'rgba(255,255,255,.02)' }}
-            >
-              <Inbox sx={{ fontSize: 36 }} />
-              <Box sx={{ pl: 2 }}>
-                <Typography variant="caption">Nyhetsbrev &amp; Blogg</Typography>
-                <Typography variant="body2">Se vår blogg!</Typography>
-              </Box>
-            </Button>
-          </Grid>
-          <Grid item md={3} xs={12}>
-            <Button
-              component={Link}
-              href="/kunder"
-              variant="contained"
-              fullWidth
-              sx={{ height: '80px', backgroundColor: 'rgba(255,255,255,.02)', borderColor: 'rgba(255,255,255,.02)' }}
-            >
-              <AccountCircle sx={{ fontSize: 36 }} />
-              <Box sx={{ pl: 2 }}>
-                <Typography variant="caption">Referenser</Typography>
-                <Typography variant="body2">Se våra kunder!</Typography>
-              </Box>
-            </Button>
-          </Grid>
+ 
         </Grid>
 
         {/* Footer Links */}
@@ -90,7 +61,7 @@ const Footer = () => {
                 Act+
               </Link>
               <Link
-                href="/seo-sokmotoroptimering"
+                href="/seo"
                 sx={{
                   color: 'white',
                   cursor: 'pointer',
@@ -101,18 +72,7 @@ const Footer = () => {
                 Sökmotoroptimering
               </Link>
               <Link
-                href="/hemsidor"
-                sx={{
-                  color: 'white',
-                  cursor: 'pointer',
-                  textDecoration: 'none',
-                  fontSize: '1.2rem', // Increased font size
-                }}
-              >
-                Hemsidor
-                </Link>
-              <Link
-                href="/landningssajt-landningssidor"
+                href="/landing"
                 sx={{
                   color: 'white',
                   cursor: 'pointer',
@@ -128,7 +88,7 @@ const Footer = () => {
             <h6>Företaget</h6>
             <Box sx={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
               <Link
-                href="/om-oss"
+                href="/about"
                 sx={{
                   color: 'white',
                   cursor: 'pointer',
@@ -138,19 +98,9 @@ const Footer = () => {
               >
                 Om oss
               </Link>
+      
               <Link
-                href="/artiklar"
-                sx={{
-                  color: 'white',
-                  cursor: 'pointer',
-                  textDecoration: 'none',
-                  fontSize: '1.2rem', // Increased font size
-                }}
-              >
-                Artiklar
-              </Link>
-              <Link
-                href="/kontakt"
+                href="/contact"
                 sx={{
                   color: 'white',
                   cursor: 'pointer',
@@ -160,17 +110,7 @@ const Footer = () => {
               >
                 Kontakta oss
               </Link>
-              <Link
-                href="/karriar"
-                sx={{
-                  color: 'white',
-                  cursor: 'pointer',
-                  textDecoration: 'none',
-                  fontSize: '1.2rem', // Increased font size
-                }}
-              >
-                Karriär
-              </Link>
+     
             </Box>
           </Grid>
           <Grid item md={6} xs={12}>
@@ -220,15 +160,7 @@ const Footer = () => {
               </Grid>
             </Grid>
           </Grid>
-          <Grid item md={3} xs={12} sx={{ display: 'flex', justifyContent: 'flex-end' }}>
-            <Typography variant="h6" sx={{ mr: 2 }}>Följ oss</Typography>
-            <Link href="https://www.facebook.com/ActLocalSwe/" sx={{ textDecoration: 'none' }}>
-              <Facebook sx={{ fontSize: 36 }} />
-            </Link>
-            <Link href="https://www.instagram.com/actlocalse/" sx={{ textDecoration: 'none' }}>
-              <Instagram sx={{ fontSize: 36 }} />
-            </Link>
-          </Grid>
+
         </Grid>
       </Container>
     </footer>

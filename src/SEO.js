@@ -98,8 +98,6 @@ const SEO = () => {
           <Typography variant="h4" style={{ fontWeight: "bold", marginTop: "86px", }}>
             Toppa sökresultatet <br /> på Google och få nya kunder!
           </Typography>
-          <br></br>
-          <br></br>
           <Typography variant="h5" style={{ marginTop: "16px", maxWidth: "650px"}}>
             Vi hjälper både lokala företag och E-handlare att tjäna mer pengar
             varje månad med hjälp av Google. Bara i Sverige så googlas det i

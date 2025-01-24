@@ -52,7 +52,7 @@ const Navbar = () => {
           flexShrink: 0,
           '& .MuiDrawer-paper': {
             width: 350,
-            backgroundColor: 'black',
+            backgroundColor: 'white',
             color: 'white',
           },
         }}
@@ -60,37 +60,39 @@ const Navbar = () => {
         anchor="left"
       >
         <List>
-          <ListItem button component="a" href="/">
-            <ListItemText style={{ textDecoration: 'none', color: 'white' }} primary="Hem" />
-          </ListItem>
-          <ListItem button component="a" href="/about">
-            <ListItemText style={{ textDecoration: 'none', color: 'white' }} primary="Om oss" />
-          </ListItem>
-          <ListItem button component="a" href="/contact">
-            <ListItemText style={{ textDecoration: 'none', color: 'white' }} primary="Kontakta oss" />
-          </ListItem>
-
-          {/* Tjänster Dropdown in Drawer */}
-          <ListItem button onClick={handleDrawerMenuToggle}>
-            <ListItemText style={{ color: 'grey' }} primary="Tjänster" />
-            {menuOpen ? <ExpandLess /> : <ExpandMore />}
+        <ListItem button onClick={handleDrawerMenuToggle}>
+            <ListItemText style={{ color: 'black' }} primary="Tjänster" />
+            {menuOpen ? <ExpandLess sx={{color:'black'}} /> : <ExpandMore sx={{color:'black'}}  />}
           </ListItem>
           <Collapse in={menuOpen} timeout="auto" unmountOnExit>
             <List component="div" disablePadding>
               <ListItem button component="a" href="/act">
-                <ListItemText style={{ textDecoration: 'none', color: 'blue' }} primary="Act+" />
+                <ListItemText style={{ textDecoration: 'none', color: 'grey' }} primary="Act+" />
               </ListItem>
               <ListItem button component="a" href="/scan">
-                <ListItemText style={{ textDecoration: 'none', color: 'blue' }} primary="Synlighetsanalys" />
+                <ListItemText style={{ textDecoration: 'none', color: 'grey' }} primary="Synlighetsanalys" />
               </ListItem>
               <ListItem button component="a" href="/seo">
-                <ListItemText style={{ textDecoration: 'none', color: 'blue' }} primary="SEO – Sökmotoroptimering" />
+                <ListItemText style={{ textDecoration: 'none', color: 'grey' }} primary="SEO – Sökmotoroptimering" />
               </ListItem>
               <ListItem button component="a" href="/landing">
-                <ListItemText style={{ textDecoration: 'none', color: 'blue' }} primary="Landningssidor" />
+                <ListItemText style={{ textDecoration: 'none', color: 'grey' }} primary="Landningssidor" />
               </ListItem>
             </List>
           </Collapse>
+
+          <ListItem button component="a" href="/">
+            <ListItemText style={{ textDecoration: 'none', color: 'black' }} primary="Hem" />
+          </ListItem>
+          <ListItem button component="a" href="/about">
+            <ListItemText style={{ textDecoration: 'none', color: 'black' }} primary="Om oss" />
+          </ListItem>
+          <ListItem button component="a" href="/contact">
+            <ListItemText style={{ textDecoration: 'none', color: 'black' }} primary="Kontakta oss" />
+          </ListItem>
+
+          {/* Tjänster Dropdown in Drawer */}
+
         </List>
         <Divider />
       </Drawer>
