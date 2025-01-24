@@ -12,7 +12,7 @@ import ContactForm from './ContactForm';
 import Navbar from './Navbar';
 import Footer from './Footer';
 
-import KOOP from "./Images/Amsterdam2.jpg"
+import KOOP from "./Images/Amsterdam3.jpg"
 
 const Barber = () => {
   return (
@@ -31,10 +31,10 @@ const Barber = () => {
           backgroundPosition: 'center',
         }}
       >
-        <Typography variant="h1" sx={{ fontSize: '3rem', fontWeight: 700 }}>
+        <Typography variant="h1" sx={{ fontSize: '3rem', fontWeight: 700, color:'grey'}}>
           Augun Spa Therapy
         </Typography>
-        <Typography variant="body1">2 September, 2024</Typography>
+        <Typography variant="body1" sx={{color:'grey'}}>2 September, 2024</Typography>
       </Box>
 
       {/* Main Content */}

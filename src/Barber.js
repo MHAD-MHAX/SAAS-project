@@ -12,7 +12,7 @@ import ContactForm from './ContactForm';
 import Navbar from './Navbar';
 import Footer from './Footer';
 
-import KOOP from "./Images/Barber2.jpg"
+import KOOP from "./Images/Barber5.jpg"
 
 const Barber = () => {
   return (
@@ -31,10 +31,10 @@ const Barber = () => {
           backgroundPosition: 'center',
         }}
       >
-        <Typography variant="h1" sx={{ fontSize: '3rem', fontWeight: 700 }}>
+        <Typography variant="h1" sx={{ fontSize: '3rem', fontWeight: 700, paddingTop:'20px',color:'grey' }}>
           Shorty's Barber Shop
         </Typography>
-        <Typography variant="body1">12 Augusti, 2024</Typography>
+        <Typography variant="body1" sx={{color:'grey' }}>12 Augusti, 2024</Typography>
       </Box>
 
       {/* Main Content */}
