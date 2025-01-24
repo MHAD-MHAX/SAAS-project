@@ -78,7 +78,7 @@ const Home = () => {
                 backgroundColor: 'black',
                 color:'white'
               }}
-              href="/skanna"
+              href="/scan"
             >
               Skanna Företag
             </Button>
