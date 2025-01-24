@@ -43,7 +43,7 @@ const LandingPage = () => {
               <br />
               <span style={{ fontSize: "3.5rem", fontWeight:'bold' }}> Landingssajt</span>
             </Typography>
-            <Typography variant="h5" component="h2" sx={{ mt: 5, maxWidth: "450px", }}>
+            <Typography variant="h5" component="h2" sx={{ mt: 5, maxWidth: "450px",color:'white' }}>
               Fördelar med landingssajter
             </Typography>
             <List sx={{ mt: 2 }}>
@@ -103,7 +103,7 @@ const LandingPage = () => {
 
 
     
-    <div style={{ background: 'rgb(237, 245, 255)', position: 'relative', paddingBottom: '85px' }}>
+    <div style={{ background: 'white', position: 'relative', paddingBottom: '85px' }}>
       <Container>
         <Grid container alignItems="center" spacing={3}>
           {/* First Row */}

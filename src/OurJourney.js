@@ -116,7 +116,7 @@ const OurJourney = () => {
                   textAlign: 'center',
                 }}
               >
-                Elite Barbers NYC 
+                Shorty's Barber Shop
               </Typography>
               {/* Button */}
               <Button

@@ -77,20 +77,20 @@ const Navbar = () => {
 
         {/* Dropdown Section (simplified) */}
         <ListItem button>
-          <ListItemText  style={{  color:'blue'}} primary="Tjänster" />
+          <ListItemText  style={{  color:'grey'}} primary="Tjänster" />
         </ListItem>
         <List>
           <ListItem button component="a" href="/act">
-            <ListItemText  style={{ textDecoration:'none', color:'white'}} primary="Act+" />
+            <ListItemText  style={{ textDecoration:'none', color:'blue'}} primary="Act+" />
           </ListItem>
           <ListItem button component="a" href="/scan">
-            <ListItemText   style={{ textDecoration:'none', color:'white'}}primary="Synlighetsanalys" />
+            <ListItemText   style={{ textDecoration:'none', color:'blue'}}primary="Synlighetsanalys" />
           </ListItem>
           <ListItem button component="a" href="/seo">
-            <ListItemText   style={{ textDecoration:'none', color:'white'}}primary="SEO – Sökmotoroptimering" />
+            <ListItemText   style={{ textDecoration:'none', color:'blue'}}primary="SEO – Sökmotoroptimering" />
           </ListItem>
           <ListItem button component="a" href="/landing">
-            <ListItemText  style={{ textDecoration:'none', color:'white'}}primary="Landningssidor" />
+            <ListItemText  style={{ textDecoration:'none', color:'blue'}}primary="Landningssidor" />
           </ListItem>
         </List>
       </List>

@@ -12,6 +12,8 @@ import ContactForm from './ContactForm';
 import Navbar from './Navbar';
 import Footer from './Footer';
 
+import KOOP from "./Images/Barber2.jpg"
+
 const Barber = () => {
   return (
     <>
@@ -24,13 +26,13 @@ const Barber = () => {
           height: 400,
           textAlign: 'center',
           color: 'black',
-          backgroundImage: `url(https://cda.actlocal.se/assets/successstories/ezgif-5-bf6e13d20812.jpg)`,
+          backgroundImage: `url(${KOOP})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
       >
         <Typography variant="h1" sx={{ fontSize: '3rem', fontWeight: 700 }}>
-          Elite Barbers NYC
+          Shorty's Barber Shop
         </Typography>
         <Typography variant="body1">12 Augusti, 2024</Typography>
       </Box>
@@ -40,7 +42,7 @@ const Barber = () => {
         sx={{
           position: 'relative',
           pt: 8,
-          backgroundColor: 'rgb(237, 245, 255)',
+          backgroundColor: 'white',
           mt: -6,
           pb: 5,
         }}
@@ -81,7 +83,7 @@ const Barber = () => {
             },
           ].map((section) => (
             <Box key={section.id} sx={{ mb: 6 }}>
-              <Typography variant="h2" sx={{ mb: 2 }}>
+              <Typography variant="h3" sx={{ mb: 2, color:'black', fontWeight:'bold' }}>
                 {section.title}
               </Typography>
               {section.content}
