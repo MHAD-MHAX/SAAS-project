@@ -88,7 +88,7 @@ const SEO = () => {
           backgroundSize: "cover",
           backgroundPosition: "center",
           height: "470px",
-          paddingTop: "50px",
+          paddingTop: "30px",
           color: "#fff",
           textAlign:'left',
            
@@ -142,11 +142,11 @@ stat: "418%",
               >
                 <Box
                   sx={{
-                    background: "#EDF8FF",
-                    color: "#0072BB",
+                    background: "white",
+                    color: "black",
                     fontWeight: "bold",
                     padding: "8px 16px",
-                    border: "1px solid #CBECFD",
+                    border: "1px solid white",
                     borderRadius: "5px",
                     display: "inline-block",
                   }}
@@ -249,7 +249,7 @@ stat: "418%",
                   sx={{
                     mt: 2,
                     mb: 2,
-                    color: step.highlight ? "#ffffff" : "#0072BB",
+                    color: step.highlight ?"#ffffff" : "black" ,
                     fontWeight: "bold",
                   }}
                 >
@@ -363,7 +363,7 @@ stat: "418%",
                 variant="h3"
                 sx={{
                   mb: 5,
-                  color: "primary.main",
+                  color: "black",
                   fontSize: { xs: "1.25rem", md: "1.5rem" },
                   fontWeight: "bold",
                 }}
@@ -401,7 +401,7 @@ stat: "418%",
                 variant="h3"
                 sx={{
                   mb: 5,
-                  color: "primary.main",
+                  color: "black",
                   fontSize: { xs: "1.25rem", md: "1.5rem" },
                   fontWeight: "bold",
                 }}
@@ -479,7 +479,7 @@ stat: "418%",
           {/* Card 1 */}
           <Box
             sx={{
-              backgroundColor: "#edf5ff",
+              backgroundColor: "white",
               borderRadius: 1,
               p: 5,
               boxShadow: "0 2px 5px rgba(0,0,0,0.1)",
@@ -492,7 +492,7 @@ stat: "418%",
                 mb: 5,
                 fontSize: { xs: "1.25rem", md: "1.5rem" },
                 fontWeight: "bold",
-                color: "primary.main",
+                color: "black",
               }}
             >
               Fokus på lönsamhet
@@ -509,7 +509,7 @@ stat: "418%",
           {/* Card 2 */}
           <Box
             sx={{
-              backgroundColor: "#edf5ff",
+              backgroundColor: "white",
               borderRadius: 1,
               p: 5,
               boxShadow: "0 2px 5px rgba(0,0,0,0.1)",
@@ -521,7 +521,7 @@ stat: "418%",
                 mb: 5,
                 fontSize: { xs: "1.25rem", md: "1.5rem" },
                 fontWeight: "bold",
-                color: "primary.main",
+                color: "black",
               }}
             >
               Vad kostar SEO?

@@ -66,10 +66,13 @@ const Scan = () => {
                         din närvaro på nätet.
                       </Typography>
                     </Box>
+                    <br></br>
+        
+
                   </Box>
                 </Box>
               </Grid>
-
+             
 
 
               {/* Right Content */}
@@ -169,7 +172,7 @@ const Scan = () => {
 
 <Box
       sx={{
-        backgroundColor: '#edf5ff',
+        backgroundColor: 'white',
         position: 'relative',
         paddingBottom: '15px',
         color:'black'
@@ -187,10 +190,11 @@ const Scan = () => {
                 backgroundPosition: 'center center',
                 backgroundSize: 'cover',
                 paddingBottom: '74.9268%',
+               
               }}
             />
           </Grid>
-          <Grid item xs={12} md={6}>
+          <Grid item xs={12} md={6} sx={{}}>
             <Typography variant="h2" sx={{ marginBottom: 5, fontSize: { xs: '2rem', md: '3rem' } }}>
               Rätt information om ert företag på alla plattformar
             </Typography>

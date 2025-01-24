@@ -317,7 +317,7 @@ style={{backgroundColor:'white', color:'black'}}
             xs={12}
             sm={6}
             sx={{
-              backgroundColor: "rgb(237, 245, 255)",
+              backgroundColor: "white",
               borderRadius: "10px",
               padding: 4,
             }}

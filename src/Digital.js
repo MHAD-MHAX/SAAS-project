@@ -1,4 +1,6 @@
 import React, { useEffect } from "react";
+
+import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -64,6 +66,7 @@ const CustomerFocusSection = () => {
           så stämmer det faktiskt!<br />
         </p>
         <br />
+        <Link to="/act">
         <button
           style={{
             backgroundColor: "black",
@@ -77,6 +80,7 @@ const CustomerFocusSection = () => {
         >
           Läs mer →
         </button>
+        </Link>
       </div>
 
       {/* Right Side - Video Content */}

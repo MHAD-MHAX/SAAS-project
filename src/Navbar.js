@@ -243,30 +243,11 @@ const Navbar = () => {
               <Phone sx={{ fontSize: '16px', marginRight: '8px' }} />
               010 173 40 10
             </Button>
-            <Button
-              href="/"
-              sx={{
-                color: 'white',
-                backgroundColor: 'black',
-                textTransform: 'none',
-                fontSize: '16px',
-                display: 'flex',
-                alignItems: 'center',
-                marginLeft: '16px',
-              }}
-            >
-              <Person sx={{ fontSize: '16px', marginRight: '8px' }} />
-              Logga in
-            </Button>
+         
           </Box>
 
           {/* Mobile login button */}
-          <IconButton
-            sx={{ display: { xs: 'block', md: 'none' }, padding: 0 }}
-            href="/"
-          >
-            <Person sx={{ fontSize: '36px' }} />
-          </IconButton>
+        
         </Toolbar>
       </AppBar>
 

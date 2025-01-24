@@ -46,7 +46,7 @@ const LandingPage = () => {
             <Typography variant="h5" component="h2" sx={{ mt: 5, maxWidth: "450px",color:'white' }}>
               Fördelar med landingssajter
             </Typography>
-            <List sx={{ mt: 2 }}>
+            <List sx={{ mt: 2, paddingLeft:'50px'}}>
               {[
                 "Hemsida med igenkänningsfaktor",
                 "Mätbar marknadsföring",

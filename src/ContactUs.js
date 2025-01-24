@@ -63,7 +63,7 @@ const ContactUs = () => {
     sx={{
       // Align text inside the container to the left
       MaxWidth: '300px', // Restrict the container width
-      marginLeft: '0px', // Add some space from the left edge of the image
+      paddingLeft: '40px', // Add some space from the left edge of the image
        // Optional: background for readability
       padding: '20px', // Add padding for better spacing
       borderRadius: '8px', // Optional: rounded corners
@@ -86,7 +86,7 @@ const ContactUs = () => {
   </Container>
 </HeroImage>
 
-<Box sx={{ background: '#EDF5FF', padding: 4 }}>
+<Box sx={{ background: 'white', padding: 4 }}>
   <Container>
     <Grid container spacing={4} alignItems="center">
       <Grid item xs={12} md={6}>
@@ -125,7 +125,7 @@ const ContactUs = () => {
   </Container>
 </Box>
 
-<Box sx={{ background: '#EDF5FF', padding: 4 }}>
+<Box sx={{ background: 'white', padding: 4 }}>
   <Container>
     <Grid container spacing={4} alignItems="center">
       <Grid item xs={12} md={6}>
@@ -166,8 +166,9 @@ const ContactUs = () => {
           </Typography>
         </Box>
       </Grid>
-      <Grid item xs={12} md={6}>
-        <ContactForm method="post" action="/thanks">
+
+      <Grid item xs={12} md={6} >
+        <ContactForm method="post" action="/thanks" sx={{backgroundColor:'white'}}>
           <Typography variant="h4" gutterBottom sx={{ color: 'black' }}>
             Skriv till oss!
           </Typography>

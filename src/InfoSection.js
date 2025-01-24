@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 import "./App.css";
 import AOS from "aos";
 import "aos/dist/aos.css";  // Import AOS styles
@@ -29,7 +30,7 @@ const ActPlus = () => {
         <img src={Gps} alt="Google Maps" data-aos="fade-up" /><br></br>
         <img src={Ig} alt="Instagram" data-aos="fade-up" /><br></br>
       </div>
-      <button className="partners-btn" data-aos="fade-up">Se alla Partners</button>
+      <Link to="/act"><button className="partners-btn" data-aos="fade-up">Se alla Partners</button></Link>
 
       {/* ActPlus Steps */}
       <h2 data-aos="fade-up">Så här fungerar Act+</h2>

@@ -141,19 +141,7 @@ const OurJourney = () => {
       </Grid>
 
       {/* See More Customers Button */}
-      <Button
-        href="/kunder"
-        variant="contained"
-        sx={{
-          borderRadius: 20,
-          width: '250px',
-          marginTop: '40px',
-          backgroundColor: 'black',
-          color: 'white',
-        }}
-      >
-        Se fler kunder
-      </Button>
+ 
     </Box>
   );
 };
