@@ -145,7 +145,7 @@ const Act = () => {
                 Win-Win!<br></br>
               </Typography>
               <Typography variant="body1" paragraph >
-              Med Act+ kan du hantera alla företagsuppgifter i realtid från en <br></br>
+              Med BC+ kan du hantera alla företagsuppgifter i realtid från en <br></br>
               och samma plattform. Har ni speciella öppettider under <br></br>
               midsommar eller jul? Ändra på ett ställe. Har ni en nyhet att  <br></br>
               kommunicera ut på alla plattformar? Posta på ett ställe. Har ni <br></br>
@@ -290,7 +290,7 @@ style={{backgroundColor:'white', color:'black'}}
               Varför vara kund hos oss?
             </Typography>
             <Typography variant="h5" gutterBottom sx={{fontSize:'1.8em'}}>
-              Act+ Kund
+              BC+ Kund
             </Typography>
             <Typography variant="body1" paragraph>
               Du frågar 20 mycket trovärdiga personer om de känner till ett visst<br></br>
@@ -299,7 +299,7 @@ style={{backgroundColor:'white', color:'black'}}
                telefonnummer. Visst skulle det då kännas tryggt för dig att kontakta de?<br></br>
             </Typography>
             <Typography variant="h5" gutterBottom sx={{fontSize:'1.8em'}}>
-              Inte Act+ Kund
+              Inte BC+ Kund
             </Typography>
             <Typography variant="body1" paragraph>
               Tänk nu istället att du frågar samma 20 personer om de känner till ett <br></br>

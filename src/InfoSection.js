@@ -33,7 +33,7 @@ const ActPlus = () => {
       <Link to="/act"><button className="partners-btn" data-aos="fade-up">Se alla Partners</button></Link>
 
       {/* ActPlus Steps */}
-      <h2 data-aos="fade-up">Så här fungerar Act+</h2>
+      <h2 data-aos="fade-up">Så här fungerar BC+</h2>
       <div className="steps">
         <div className="step-card" data-aos="zoom-in">
           <span className="icon"><img src={Stack}/></span>

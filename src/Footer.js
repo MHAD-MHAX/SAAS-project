@@ -11,10 +11,10 @@ const Footer = () => {
       <Container>
         {/* Contact and Links Section */}
         <Grid container spacing={2}>
-          <Grid item md={6} xs={12}>
+          <Grid item md={12} xs={12}>
             <Button
               component={Link}
-              href="/kontakt"
+              href="/contact"
               variant="contained"
               fullWidth
               sx={{ height: '80px', backgroundColor: 'rgba(255,255,255,.02)', borderColor: 'rgba(255,255,255,.02)' }}
@@ -26,21 +26,7 @@ const Footer = () => {
               </Box>
             </Button>
           </Grid>
-          <Grid item md={3} xs={12}>
-            <Button
-              component={Link}
-              href="/partners"
-              variant="contained"
-              fullWidth
-              sx={{ height: '80px', backgroundColor: 'rgba(255,255,255,.02)', borderColor: 'rgba(255,255,255,.02)' }}
-            >
-              <LocalShipping sx={{ fontSize: 36 }} />
-              <Box sx={{ pl: 2 }}>
-                <Typography variant="caption">Act+</Typography>
-                <Typography variant="body2">Se vår populära tjänst</Typography>
-              </Box>
-            </Button>
-          </Grid>
+     
  
         </Grid>
 
@@ -58,7 +44,7 @@ const Footer = () => {
                   fontSize: '1.2rem', // Increased font size
                 }}
               >
-                Act+
+                BC+
               </Link>
               <Link
                 href="/seo"
@@ -120,7 +106,7 @@ const Footer = () => {
             </Typography>
             <Box sx={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
               <Link
-                href="/seo-sokmotoroptimering"
+                href="/seo"
                 sx={{
                   color: 'white',
                   cursor: 'pointer',
@@ -130,17 +116,7 @@ const Footer = () => {
               >
                 Vad är SEO
               </Link>
-              <Link
-                href="/partners"
-                sx={{
-                  color: 'white',
-                  cursor: 'pointer',
-                  textDecoration: 'none',
-                  fontSize: '1.2rem', // Increased font size
-                }}
-              >
-                Lokal SEO
-              </Link>
+          
             </Box>
           </Grid>
         </Grid>

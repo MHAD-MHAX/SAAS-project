@@ -67,7 +67,7 @@ const Navbar = () => {
           <Collapse in={menuOpen} timeout="auto" unmountOnExit>
             <List component="div" disablePadding>
               <ListItem button component="a" href="/act">
-                <ListItemText style={{ textDecoration: 'none', color: 'grey' }} primary="Act+" />
+                <ListItemText style={{ textDecoration: 'none', color: 'grey' }} primary="BC+" />
               </ListItem>
               <ListItem button component="a" href="/scan">
                 <ListItemText style={{ textDecoration: 'none', color: 'grey' }} primary="Synlighetsanalys" />
@@ -168,7 +168,7 @@ const Navbar = () => {
                     <a style={{ textDecoration: 'none', color: 'inherit' }} href="/act">
                       <Box sx={{ display: 'flex', flexDirection: 'column' }}>
                         <Typography variant="subtitle1" sx={{ fontWeight: 'bold' }}>
-                          Act+
+                          BC+
                         </Typography>
                         <Typography variant="body2">Nå dina lokala besökare på rätt sätt.</Typography>
                       </Box>
