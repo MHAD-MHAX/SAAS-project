@@ -36,7 +36,7 @@ const Footer = () => {
             <h5>Tjänster</h5>
             <Box sx={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
               <Link
-                href="/partners"
+                href="/act"
                 sx={{
                   color: 'white',
                   cursor: 'pointer',
