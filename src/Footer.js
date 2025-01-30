@@ -100,7 +100,7 @@ const Footer = () => {
             </Box>
           </Grid>
           <Grid item md={6} xs={12}>
-            <h6>Act Local AB - Lokal SEO</h6>
+            <h6>Business Creatives - Lokal SEO</h6>
             <Typography variant="body2" sx={{ mb: 3 }}>
               Vi är en SEO-byrå med fokus på lokala företag. Med sökmotoroptimering hjälper vi våra kunder att skaffa nya kunder varje månad via världens största sökmotor, Google.
             </Typography>

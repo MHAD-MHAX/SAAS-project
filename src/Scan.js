@@ -62,8 +62,8 @@ const Scan = () => {
                         <CheckCircleIcon />
                       </Avatar>
                       <Typography sx={{ ml: 2 }}>
-                        Efter 10 sekunder får du en kostnadsfri rapport som visar
-                        din närvaro på nätet.
+                        Efter skanning far du en kostandsfri rapport som 
+                        visar din narvaro pa natet.
                       </Typography>
                     </Box>
                     <br></br>

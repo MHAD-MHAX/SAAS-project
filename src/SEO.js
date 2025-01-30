@@ -66,7 +66,7 @@ const SEO = () => {
     {
       title: "Något mer du undrar?",
       description:
-        "Vi berättar gärna mer ingående hur stegen går till och vad vi gör för att hjälpa er att ranka bättre. Ring oss på 010 - 173 40 10 eller maila oss på hello@actlocal.se.",
+        "Vi berättar gärna mer ingående hur stegen går till och vad vi gör för att hjälpa er att ranka bättre. Kontakta oss pả +46 763139909 eller maila oss pả hello@businesscreatives.se.",
       highlight: true,
     },
   ];

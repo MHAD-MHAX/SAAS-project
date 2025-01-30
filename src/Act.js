@@ -49,32 +49,7 @@ const Act = () => {
             Utöver dessa så har vi även kart och GPS-system och företagskataloger.<br></br>
             <br></br>
           </Typography>
-          <Box display="flex" alignItems="left" mt={3}>
-            <Box
-              sx={{
-                background: "rgba(0, 0, 0, 0.2)",
-                padding: "10px 15px",
-                borderRadius: "45px",
-                marginRight: "15px",
-                fontSize: "11.5px",
-              }}
-            >
-              Jämför att vara kund och inte kund hos oss
-            </Box>
-            <Button
-              variant="contained"
-              color="success"
-              size="large"
-              sx={{
-                backgroundColor: "#49B978",
-                "&:hover": {
-                  backgroundColor: "#3DA869",
-                },
-              }}
-            >
-              här!
-            </Button>
-          </Box>
+
         </Container>
       </Box>
 

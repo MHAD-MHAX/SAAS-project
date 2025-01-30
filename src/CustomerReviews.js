@@ -20,11 +20,11 @@ const CustomerReviews = () => {
               <Box sx={{ display: 'flex', alignItems: 'center' }}>
                 <Avatar
                   src="https://lh3.googleusercontent.com/a/ACg8ocKIoklxL2mwHaXB0DrfgUSBYDfjAtRxPEqnXCz9QSSCV9Ok7w=w40-h40-c-rp-mo-br100"
-                  alt="Emma"
+                  alt="Daniel in malmo"
                   sx={{ width: 40, height: 40, marginRight: 2 }}
                 />
                 <Box>
-                  <Typography variant="body2">Emma</Typography>
+                  <Typography variant="body2">Daniel in malmo</Typography>
                   <Typography variant="body2" sx={{ color: 'text.secondary' }}>
                     January 8, 2025
                   </Typography>
@@ -69,7 +69,7 @@ const CustomerReviews = () => {
                 sx={{ marginY: 2 }}
               />
               <Typography variant="body2">
-                Super nöjd med helheten, snabb hjälp och respons. Särskilt Lara som alltid finns vid hjälp.
+                Super nöjd med helheten, snabb hjälp och respons. 
               </Typography>
          
             </CardContent>

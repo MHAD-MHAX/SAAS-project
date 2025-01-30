@@ -13,6 +13,7 @@ import {
 import PhoneIcon from '@mui/icons-material/Phone';
 
 import Navbar from './Navbar';
+import { Link } from 'react-router-dom';
 
 import Footer from './Footer';
 import PersonIcon from '@mui/icons-material/Person';
@@ -83,7 +84,19 @@ const ContactUs = () => {
       att boka in ett webbmöte med en av våra specialister. Klicka in nedan och boka<br></br>
       upp en tid som passar dig bäst.
     </Typography>
+
+
+    <Link to ="https://calendly.com/hello-businesscreatives/30min">
+    <Button 
+      variant="contained" 
+      color="primary" 
+      sx={{ marginTop: '20px', display: 'block', marginLeft: 'auto', marginRight: 'auto' }}
+    >
+      Boka
+    </Button>
+    </Link>
   </Container>
+
 </HeroImage>
 
 <Box sx={{ background: 'white', padding: 4 }}>
@@ -94,19 +107,18 @@ const ContactUs = () => {
           Kontakta oss
         </Typography>
         <Typography variant="body1" paragraph sx={{ color: 'black' }}>
-          Vi finns här när du behöver oss. Vi bjuder gärna in dig på en kopp kaffe på
-          vårt kontor, eller kommer ut till ert företag för att få en bättre bild av
-          vilka ni är och vad ni gör.
+        Vi finns här när du behöver oss. Vi bjuder garna in dig pả en kopp kaffe <br/>
+        pả värt kontor, eller kommer ut till ert företag för att fä en bättre bild<br/>
+        av vilka ni är och vad ni gör.<br/>
         </Typography>
         <Typography variant="body1" paragraph sx={{ color: 'black' }}>
-          Vi har våra kontor i Helsingborg och Stockholm men har kunder ifrån Ystad
-          till Luleå i dagsläget och tar annars gärna ett telefonsamtal eller webbmöte
-          där vi kan göra en behovsanalys tillsammans och se hur ni hade kunnat haft
-          nytta av våra tjänster.
+        Vi har văra kontor i Malmö och Stockholm men har kunder ifràn Ystad till <br/>
+        Lulea i dagsläget och tar annars gärna ett telefonsamtal eller webbmöte där <br/>
+        vi kan göra en behovsanalys tillsammans och se hur ni hade kunnat haft nytta av vara tjänster.<br/>
         </Typography>
         <Typography variant="body1" paragraph sx={{ color: 'black' }}>
-          För oss är ingen kund för liten eller för stor, vi hjälper dig som ensam
-          företagare men även er som stor koncern.
+        För oss är ingen kund för liten eller för stor, vi hjälper dig som <br/>
+        ensam företagare men även er som stor koncern.
         </Typography>
       </Grid>
       <Grid item xs={12} md={6}>
@@ -140,29 +152,29 @@ const ContactUs = () => {
         </Typography>
         <Typography variant="body1" paragraph sx={{ color: 'black' }}>
           Det går självklart även bra att ringa in till oss direkt, du når oss då på
-          010 - 173 40 10. Föredrar du att maila direkt så gör du det enklast på
-          hello@actlocal.se.
+          +46 763139909. Föredrar du att maila direkt så gör du det enklast på
+          hello@businesscreatives.se
         </Typography>
         <br></br>
         <br></br>
 
         <Typography variant="h4" gutterBottom sx={{ color: 'black' }}>
-          Våra kontor
+          Våra kontakt
         </Typography>
         <Box sx={{ background: '#FFF', padding: 2, marginBottom: 2 }}>
           <Typography variant="h6" sx={{ color: 'black' }}>Helsingborg</Typography>
-          <Typography variant="body1" sx={{ color: 'black' }}>010 - 173 40 10</Typography>
+          <Typography variant="body1" sx={{ color: 'black' }}>+46 763139909</Typography>
           <Typography variant="body1" sx={{ color: 'black' }}>hello@actlocal.se</Typography>
           <Typography variant="body1" sx={{ color: 'black' }}>
-            Kullagatan 30, 254 66 Helsingborg
+           
           </Typography>
         </Box>
         <Box sx={{ background: '#FFF', padding: 2 }}>
           <Typography variant="h6" sx={{ color: 'black' }}>Stockholm</Typography>
-          <Typography variant="body1" sx={{ color: 'black' }}>010 - 173 40 10</Typography>
-          <Typography variant="body1" sx={{ color: 'black' }}>hello@actlocal.se</Typography>
+          <Typography variant="body1" sx={{ color: 'black' }}>+46 763139909</Typography>
+          <Typography variant="body1" sx={{ color: 'black' }}>hello@businesscreatives.se</Typography>
           <Typography variant="body1" sx={{ color: 'black' }}>
-            Strandvägen 7A, 114 51 Stockholm
+            
           </Typography>
         </Box>
       </Grid>

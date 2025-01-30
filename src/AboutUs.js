@@ -48,12 +48,11 @@ const AboutUs = () => {
           Specialister inom SEO
         </Typography>
         <Typography variant="body1" sx={{ color: 'white', mt: 2 }}>
-          Resan startade i vår vackra huvudstad Stockholm, därefter har vi öppnat kontor i Helsingborg (som numera blivit vårt huvudkontor) och även satellitkontor i Göteborg och Norrköping.
+        Resan startade i vàr vackra huvudstad
+        Stockholm, därefter har vi öppnat upp kontor i <br></br>Malmö (som numera blivit värt huvudkontor).
         </Typography>
         <br></br>
-        <Button variant="contained" sx={{ borderRadius: '30px', backgroundColor: 'black' }}>
-        Vår personal
-      </Button>
+     
       </Box>
     </Box>
 
@@ -77,16 +76,16 @@ const AboutUs = () => {
     Startade i Stockholm
   </Typography>
   <Typography variant="body1" sx={{ mb: 3, textAlign:'left' }}>
-    Act Local grundades hösten 2017 och vi tog in vår första kund januari 2018.<br />
-    Sedan dess så har det hänt mycket, fler kunder, fler anställda och nya<br />
-    kontor. Bolaget grundades med en klar vision, att bli Sveriges ledande <br />
-    SEO-byrå inom lokal sökmotoroptimering. Det som gör oss unika är vår<br />
-    högt prisade tjänst Act+ som hjälpt lokala företagen att i snitt öka antalet<br />
-    telefonsamtal inom 6 månader via Google med hela 82%!<br />
-    <br /><br />
-    Resan startade i vår vackra huvudstad Stockholm, därefter har vi öppnat <br />
-    upp kontor i Helsingborg (som numera blivit vårt huvudkontor) och även så <br />
-    kallade satellitkontor i Göteborg och Norrköping.
+    Business Creatives grundades hösten 2019 och vi tog in vàr första kund januari 2020.<br />
+    Sedan dess sá har det hänt mycket, fler kunder, fler anstallda och nya <br />
+    kontor. Bolaget grundades med en klar vision, att bli Sveriges ledande SEO-byra<br/>
+    inom lokal sökmotoroptimering. Det som gor oss unika är vàr högt prisade tjänst BC+ <br/>
+    som hjälpt lokala företagen att i snitt öka antalet telefonsamtal inom 6 mánader via <br/>
+    Google med hela 82%!<br/>
+    <br/>
+
+    Resan startade i vär vackra huvudstad Stockholm, därefter har vi öppnat upp kontor i Malmö <br/>
+    (som numera blivit vart huvudkontor)
   </Typography>
 
   <Typography variant="h5" sx={{ mb: 3, fontSize: '2.0em', fontWeight: 'bold',  textAlign:'left' }}>

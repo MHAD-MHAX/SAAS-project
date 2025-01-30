@@ -37,7 +37,7 @@ const ActPlus = () => {
       <div className="steps">
         <div className="step-card" data-aos="zoom-in">
           <span className="icon"><img src={Stack}/></span>
-          <p>Vi samlar in och publicerar er företagsdata i Act Locals plattform</p>
+          <p>Vi samlar in och publicerar er företagsdata i Business creatives plattform</p>
         </div>
         <div className="step-card" data-aos="zoom-in">
           <span className="icon"><img src={Shield}/></span>
@@ -45,7 +45,7 @@ const ActPlus = () => {
         </div>
         <div className="step-card" data-aos="zoom-in">
           <span className="icon"><img src={Pulse}/></span>
-          <p>Act Local publicerar er data i det digitala ekosystemet</p>
+          <p>Business creatives publicerar er data i det digitala ekosystemet</p>
         </div>
         <div className="step-card highlight" data-aos="zoom-in">
           <span className="icon"><img src={Check}/></span>

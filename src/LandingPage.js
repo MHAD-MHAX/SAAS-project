@@ -222,7 +222,7 @@ const LandingPage = () => {
                 <ListItem>Hur många nya leads som sajten genererat</ListItem>
               </List>
               <Typography variant="body1">
-                Detta genom ett unikt koncept för leadsuppföljning som vi arbetar med på Act Local.
+                Detta genom ett unikt koncept för leadsuppföljning som vi arbetar med på Business Creatives.
               </Typography>
             </Grid>
             <Grid item xs={12} md={6}>
